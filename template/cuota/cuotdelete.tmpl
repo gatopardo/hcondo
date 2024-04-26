@@ -1,0 +1,78 @@
+{{define "title"}}{{.Title}}{{end}}
+{{define "head"}} {{end}}
+{{define "foot"}}{{end}}
+
+{{define "content"}}
+  <div class="fcontent">
+       <h3 class="mcenter">{{template "title" .}}</h3>
+       <form method="post" action="{{.Action}}">
+
+	   <div class="fwrapper fcols2">
+              <div class="fbox">
+                 <label for="period">Periodo</label>
+              </div>
+              <div class="fbox">
+                 <input type="text" id="period" name="period" size="12"  value="{{.Cuot.Period | DATEFORMAT}}" readonly autofocus />
+              </div>
+           </div>
+		
+	   <div class="fwrapper fcols2">
+              <div class="fbox">
+                 <label for="fecha">Fecha</label>
+              </div>
+              <div class="fbox">
+                 <input type="text" id="fecha" name="fecha" size="12"  value="{{.Cuot.Fecha | DATEFORMAT}}" readonly />
+              </div>
+           </div>
+
+	   <div class="fwrapper fcols2">
+              <div class="fbox">
+                 <label for="apto">Apto</label>
+              </div>
+              <div class="fbox">
+                 <input type="text" id="apto" name="apto" size="3"  value="{{.Cuot.Apto }}" readonly />
+              </div>
+           </div>
+
+	   <div class="fwrapper fcols2">
+              <div class="fbox">
+                 <label for="transfe">Transfe</label>
+              </div>
+              <div class="fbox">
+                 <input type="checkbox" id="transfe" name="transfe" 
+                   value="{{ .Cuot.Transfe }}" {{if .Cuot.Transfe}}checked {{end}} readonly />
+              </div>
+           </div>
+
+	   <div class="fwrapper fcols2">
+              <div class="fbox">
+                 <label for="monto">Monto</label>
+              </div>
+              <div class="fbox">
+                 <input type="text" id="monto" name="monto" size="16"  value="{{.Cuot.Amount | FORMAT64}}"  readonly/>
+              </div>
+           </div>
+
+
+	   <div class="fwrapper fcols2">
+              <div class="fbox">
+                <span>
+		 <input type="hidden" name="token" value="{{.token}}"/>
+		 <input type="hidden" name="pid" value="{{.Cuot.PeriodId}}"/>
+		 <input type="hidden" name="id" value="{{.Cuot.Id}}"/>
+                 </span>
+              </div>
+              <div class="fbox">
+                 <span>
+                 <input type="submit" name="action" value="Eliminar" />
+                 <input type="submit" name="action" value="Cancelar" />
+                 </span>
+              </div>
+           </div>
+		
+	</form>
+	
+	{{template "footer" .}}
+  </div>
+
+{{end}}
