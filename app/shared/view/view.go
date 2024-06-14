@@ -12,7 +12,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gatopardo/hcondo/app/model"
+	"hcondo/app/model"
  )
 
 func init() {

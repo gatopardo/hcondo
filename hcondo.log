@@ -1,0 +1,1257 @@
+2024/04/26 10:44:35 main.go:43: Mensaje de Inicio
+INFO 2024/04/26 10:44:35 main.go:51: Starting app
+INFO 2024/04/26 10:44:35 route.go:42: HTTPS routes LoadHTTP
+INFO 2024/04/26 10:44:35 route.go:383: middleware hcondo
+INFO 2024/04/26 10:44:35 route.go:36: HTTPS routes LoadHTTPS
+INFO 2024/04/26 10:44:35 route.go:383: middleware hcondo
+INFO 2024/04/26 10:44:35 server.go:38: 0.0.0.0:4430
+INFO 2024/04/26 10:47:08 logrequest.go:14: 172.21.0.84:50552 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 10:47:14 logrequest.go:14: 172.21.0.84:50552 GET /japt/2024-02-26/2024-03-27/6
+INFO 2024/04/26 10:47:14 logrequest.go:14: 172.21.0.84:50552 GET /
+INFO 2024/04/26 10:55:53 logrequest.go:14: 172.21.0.84:37900 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 10:56:01 logrequest.go:14: 172.21.0.84:37900 GET /japt/2024-02-26/2024-03-27/6
+INFO 2024/04/26 10:56:01 logrequest.go:14: 172.21.0.84:37900 GET /
+2024/04/26 11:25:38 main.go:43: Mensaje de Inicio
+INFO 2024/04/26 11:25:38 main.go:51: Starting app
+INFO 2024/04/26 11:25:38 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/26 11:25:38 route.go:377: middleware hcondo
+INFO 2024/04/26 11:25:38 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/26 11:25:38 route.go:377: middleware hcondo
+INFO 2024/04/26 11:25:38 server.go:38: 0.0.0.0:4430
+INFO 2024/04/26 11:27:04 logrequest.go:14: 172.21.0.84:43606 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 11:27:09 logrequest.go:14: 172.21.0.84:43606 GET /japt/2024-02-26/2024-03-27/6
+INFO 2024/04/26 11:27:09 logrequest.go:14: 172.21.0.84:43606 GET /
+INFO 2024/04/26 11:29:04 logrequest.go:14: 172.21.0.84:48120 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 11:29:07 logrequest.go:14: 172.21.0.84:48120 GET /japt/2024-02-26/2024-03-27/6
+INFO 2024/04/26 11:29:07 logrequest.go:14: 172.21.0.84:48120 GET /
+2024/04/26 11:32:01 main.go:43: Mensaje de Inicio
+INFO 2024/04/26 11:32:01 main.go:51: Starting app
+INFO 2024/04/26 11:32:01 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/26 11:32:01 route.go:377: middleware hcondo
+INFO 2024/04/26 11:32:01 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/26 11:32:01 route.go:377: middleware hcondo
+INFO 2024/04/26 11:32:01 server.go:38: 0.0.0.0:4430
+INFO 2024/04/26 11:33:22 logrequest.go:14: 172.21.0.84:60922 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 11:33:26 logrequest.go:14: 172.21.0.84:60922 GET /japt/2024-02-26/2024-03-27/6
+INFO 2024/04/26 11:33:26 logrequest.go:14: 172.21.0.84:60922 GET /
+2024/04/26 11:51:25 main.go:43: Mensaje de Inicio
+INFO 2024/04/26 11:51:25 main.go:51: Starting app
+INFO 2024/04/26 11:51:25 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/26 11:51:25 route.go:378: middleware hcondo
+INFO 2024/04/26 11:51:25 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/26 11:51:25 route.go:378: middleware hcondo
+INFO 2024/04/26 11:51:25 server.go:38: 0.0.0.0:4430
+INFO 2024/04/26 11:52:29 logrequest.go:14: 172.21.0.84:57008 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 11:52:33 logrequest.go:14: 172.21.0.84:57008 GET /japt/2024-02-26/2024-03-27/6
+INFO 2024/04/26 13:44:09 logrequest.go:14: 172.21.0.84:57534 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 13:44:15 logrequest.go:14: 172.21.0.84:57534 GET /japt/2024-0/2024-0/6
+2024/04/26 13:44:15 server.go:3214: http: panic serving 172.21.0.84:57534: runtime error: slice bounds out of range [:10] with length 6
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8fc760?, 0xc00015e3d8?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JAptGET({0x9f4738, 0xc00019c620}, 0xc0001602a0?)
+	/u13/www/html/go/src/hcondo/app/controller/aparta.go:31 +0xafb
+net/http.HandlerFunc.ServeHTTP(0xc000167948?, {0x9f4738?, 0xc00019c620?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9f4738, 0xc00019c620}, 0xce73a0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc000200000?, {0x9f4738?, 0xc00019c620?}, 0x8a9a60?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func16({0x9f4738, 0xc00019c620}, 0xc0001382d0?, {0xc0001307e0?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0001306c0, {0x9f4738, 0xc00019c620}, 0xc000200000)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc000151490, {0x9f4738, 0xc00019c620}, 0xc000200000)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9f4738, 0xc00019c620}, 0xc000200000)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9f4738?, 0xc00019c620?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9f4738?, 0xc00019c620?}, 0xc0001e0160?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd16940?, {0x9f4738?, 0xc00019c620?}, 0xc000159b50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc00009d470?}, {0x9f4738?, 0xc00019c620?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000c0a20, {0x9f53b8, 0xc0001b3350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+INFO 2024/04/26 13:44:15 logrequest.go:14: 172.21.0.84:57546 GET /japt/2024-0/2024-0/6
+2024/04/26 13:44:15 server.go:3214: http: panic serving 172.21.0.84:57546: runtime error: slice bounds out of range [:10] with length 6
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8fc760?, 0xc000028498?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JAptGET({0x9f4738, 0xc0000b8b60}, 0xc0001602a0?)
+	/u13/www/html/go/src/hcondo/app/controller/aparta.go:31 +0xafb
+net/http.HandlerFunc.ServeHTTP(0xc0000c9288?, {0x9f4738?, 0xc0000b8b60?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9f4738, 0xc0000b8b60}, 0xce73a0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc000200100?, {0x9f4738?, 0xc0000b8b60?}, 0x8a9a60?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func16({0x9f4738, 0xc0000b8b60}, 0xc00002c690?, {0xc00008ab40?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0001306c0, {0x9f4738, 0xc0000b8b60}, 0xc000200100)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc000151490, {0x9f4738, 0xc0000b8b60}, 0xc000200100)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9f4738, 0xc0000b8b60}, 0xc000200100)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9f4738?, 0xc0000b8b60?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9f4738?, 0xc0000b8b60?}, 0xc0000d3080?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd16940?, {0x9f4738?, 0xc0000b8b60?}, 0xc00006eb50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc0001b3560?}, {0x9f4738?, 0xc0000b8b60?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00014afc0, {0x9f53b8, 0xc0001b3350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+INFO 2024/04/26 13:45:21 logrequest.go:14: 172.21.0.84:36326 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 13:45:26 logrequest.go:14: 172.21.0.84:36326 GET /japt/2024-02/2024-03/6
+2024/04/26 13:45:26 server.go:3214: http: panic serving 172.21.0.84:36326: runtime error: slice bounds out of range [:10] with length 7
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8fc760?, 0xc000028510?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JAptGET({0x9f4738, 0xc0000b8ee0}, 0xc0001602a0?)
+	/u13/www/html/go/src/hcondo/app/controller/aparta.go:31 +0xafb
+net/http.HandlerFunc.ServeHTTP(0xc0000c93a8?, {0x9f4738?, 0xc0000b8ee0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9f4738, 0xc0000b8ee0}, 0xce73a0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc0000c6300?, {0x9f4738?, 0xc0000b8ee0?}, 0x8a9a60?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func16({0x9f4738, 0xc0000b8ee0}, 0xc00002c6c0?, {0xc00008aba0?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0001306c0, {0x9f4738, 0xc0000b8ee0}, 0xc0000c6300)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc000151490, {0x9f4738, 0xc0000b8ee0}, 0xc0000c6300)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9f4738, 0xc0000b8ee0}, 0xc0000c6300)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9f4738?, 0xc0000b8ee0?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9f4738?, 0xc0000b8ee0?}, 0xc0000d3340?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd16940?, {0x9f4738?, 0xc0000b8ee0?}, 0xc0002f5b50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc00029c090?}, {0x9f4738?, 0xc0000b8ee0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0002a0000, {0x9f53b8, 0xc0001b3350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+INFO 2024/04/26 13:45:26 logrequest.go:14: 172.21.0.84:36340 GET /japt/2024-02/2024-03/6
+2024/04/26 13:45:26 server.go:3214: http: panic serving 172.21.0.84:36340: runtime error: slice bounds out of range [:10] with length 7
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8fc760?, 0xc0000285a0?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JAptGET({0x9f4738, 0xc0000b9260}, 0xc0001602a0?)
+	/u13/www/html/go/src/hcondo/app/controller/aparta.go:31 +0xafb
+net/http.HandlerFunc.ServeHTTP(0xc0000c94c8?, {0x9f4738?, 0xc0000b9260?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9f4738, 0xc0000b9260}, 0xce73a0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc0000c6400?, {0x9f4738?, 0xc0000b9260?}, 0x8a9a60?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func16({0x9f4738, 0xc0000b9260}, 0xc00002c6f0?, {0xc00008ac00?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0001306c0, {0x9f4738, 0xc0000b9260}, 0xc0000c6400)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc000151490, {0x9f4738, 0xc0000b9260}, 0xc0000c6400)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9f4738, 0xc0000b9260}, 0xc0000c6400)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9f4738?, 0xc0000b9260?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9f4738?, 0xc0000b9260?}, 0xc0000d3600?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd16940?, {0x9f4738?, 0xc0000b9260?}, 0xc00006eb50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc00009db30?}, {0x9f4738?, 0xc0000b9260?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000c0e10, {0x9f53b8, 0xc0001b3350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+2024/04/26 14:32:51 main.go:43: Mensaje de Inicio
+INFO 2024/04/26 14:32:51 main.go:51: Starting app
+INFO 2024/04/26 14:32:51 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/26 14:32:51 route.go:378: middleware hcondo
+INFO 2024/04/26 14:32:51 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/26 14:32:51 route.go:378: middleware hcondo
+INFO 2024/04/26 14:32:51 server.go:38: 0.0.0.0:4430
+INFO 2024/04/26 14:39:25 logrequest.go:14: 172.21.0.84:44744 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 14:39:30 logrequest.go:14: 172.21.0.84:44744 GET /japt/2024-02/2024-03/6
+INFO 2024/04/26 15:00:34 logrequest.go:14: 172.21.0.84:34422 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 15:00:38 logrequest.go:14: 172.21.0.84:58014 GET /japt/2024-02/2024-03/6
+INFO 2024/04/26 15:01:57 logrequest.go:14: 172.21.0.84:39680 GET /japt/2024-02/2024-03/6
+INFO 2024/04/26 15:02:10 logrequest.go:14: 172.21.0.84:42466 GET /japt/2023-12/2023-12/6
+INFO 2024/04/26 15:03:01 logrequest.go:14: 172.21.0.84:34996 GET /japt/2023-12/2023-12/6
+INFO 2024/04/26 15:11:18 logrequest.go:14: 172.21.0.84:47182 GET /japt/2023-07/2024-02/6
+INFO 2024/04/26 15:12:43 logrequest.go:14: 172.21.0.84:51956 GET /japt/2024-02/2024-03/6
+INFO 2024/04/26 15:13:08 logrequest.go:14: 172.21.0.84:51956 GET /japt/2018-02/2024-03/6
+2024/04/26 15:16:29 main.go:43: Mensaje de Inicio
+INFO 2024/04/26 15:16:29 main.go:51: Starting app
+INFO 2024/04/26 15:16:29 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/26 15:16:29 route.go:378: middleware hcondo
+INFO 2024/04/26 15:16:29 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/26 15:16:29 route.go:378: middleware hcondo
+INFO 2024/04/26 15:16:29 server.go:38: 0.0.0.0:4430
+INFO 2024/04/26 15:46:32 logrequest.go:14: 172.21.0.84:58828 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 15:47:18 logrequest.go:14: 172.21.0.84:40730 GET /japt/2024-02/2024-03/6
+INFO 2024/04/26 15:50:15 logrequest.go:14: 172.21.0.84:45970 GET /japt/2024-02/2024-03/6
+2024/04/26 16:58:33 main.go:43: Mensaje de Inicio
+INFO 2024/04/26 16:58:33 main.go:51: Starting app
+INFO 2024/04/26 16:58:33 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/26 16:58:33 route.go:378: middleware hcondo
+INFO 2024/04/26 16:58:33 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/26 16:58:33 route.go:378: middleware hcondo
+INFO 2024/04/26 16:58:33 server.go:38: 0.0.0.0:4430
+INFO 2024/04/26 16:59:08 logrequest.go:14: 172.21.0.84:56344 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/26 16:59:32 logrequest.go:14: 172.21.0.84:59258 GET /japt/2024-02/2024-03/6
+2024/04/30 14:55:28 main.go:35: Mensaje de Inicio
+INFO 2024/04/30 14:55:28 main.go:43: Starting app
+INFO 2024/04/30 14:55:28 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/30 14:55:28 route.go:378: middleware hcondo
+INFO 2024/04/30 14:55:28 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/30 14:55:28 route.go:378: middleware hcondo
+INFO 2024/04/30 14:55:28 server.go:38: 0.0.0.0:4430
+INFO 2024/04/30 15:04:54 logrequest.go:14: 172.21.0.244:53046 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/30 15:05:25 logrequest.go:14: 172.21.0.244:53046 GET /japt/2024-03/2024-03/6
+2024/04/30 16:20:31 main.go:35: Mensaje de Inicio
+INFO 2024/04/30 16:20:31 main.go:43: Starting app
+INFO 2024/04/30 16:20:31 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/04/30 16:20:31 route.go:378: middleware hcondo
+INFO 2024/04/30 16:20:31 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/04/30 16:20:31 route.go:378: middleware hcondo
+INFO 2024/04/30 16:20:31 server.go:38: 0.0.0.0:4430
+INFO 2024/04/30 16:20:40 logrequest.go:14: 172.21.0.244:43242 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/30 16:21:00 logrequest.go:14: 172.21.0.244:43242 GET /japt/2024-03/2024-03/6
+INFO 2024/04/30 16:37:52 logrequest.go:14: 172.21.0.244:44148 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/30 16:39:00 logrequest.go:14: 172.21.0.244:44148 GET /japt/2024-03/2024-03/6
+INFO 2024/04/30 16:47:04 logrequest.go:14: 172.21.0.244:48124 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/30 16:47:28 logrequest.go:14: 172.21.0.244:48124 GET /japt/2023/11/2024/03/6
+INFO 2024/04/30 16:59:34 logrequest.go:14: 172.21.0.244:55818 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/30 17:00:03 logrequest.go:14: 172.21.0.244:56890 GET /japt/2023-11/2024/03/6
+INFO 2024/04/30 17:02:46 logrequest.go:14: 172.21.0.244:44878 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/04/30 17:03:17 logrequest.go:14: 172.21.0.244:52090 GET /japt/2023-11/2024-03/6
+2024/05/02 08:55:55 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 08:55:55 main.go:43: Starting app
+INFO 2024/05/02 08:55:55 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 08:55:55 route.go:378: middleware hcondo
+INFO 2024/05/02 08:55:55 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 08:55:55 route.go:378: middleware hcondo
+INFO 2024/05/02 08:55:55 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 08:57:08 logrequest.go:14: 172.21.0.244:49112 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 08:57:25 logrequest.go:14: 172.21.0.244:49112 GET /japt/2023-11/2024-04/6
+INFO 2024/05/02 09:23:36 logrequest.go:14: 172.21.0.244:41538 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 09:23:58 logrequest.go:14: 172.21.0.244:41538 GET /japt/2023-10/2024-04/6
+INFO 2024/05/02 09:34:28 logrequest.go:14: 172.21.0.244:42562 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 09:34:50 logrequest.go:14: 172.21.0.244:53398 GET /japt/2023-10/2024-04/6
+INFO 2024/05/02 09:37:24 logrequest.go:14: 172.21.0.244:45742 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 09:37:42 logrequest.go:14: 172.21.0.244:37434 GET /japt/2022-12/2024-04/6
+INFO 2024/05/02 10:21:56 logrequest.go:14: 172.21.0.244:51964 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 10:22:13 logrequest.go:14: 172.21.0.244:51964 GET /japt/2023-07/2024-04/6
+INFO 2024/05/02 10:56:53 logrequest.go:14: 172.21.0.244:35796 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 10:57:07 logrequest.go:14: 172.21.0.244:35796 GET /japt/2023-06/2024-04/6
+2024/05/02 14:39:47 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 14:39:47 main.go:43: Starting app
+INFO 2024/05/02 14:39:47 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 14:39:47 route.go:378: middleware hcondo
+INFO 2024/05/02 14:39:47 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 14:39:47 route.go:378: middleware hcondo
+INFO 2024/05/02 14:39:47 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 14:40:47 logrequest.go:14: 172.21.0.244:49610 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 14:40:57 logrequest.go:14: 172.21.0.244:49610 GET /japt/2024-03/2024-04/6
+2024/05/02 14:43:51 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 14:43:51 main.go:43: Starting app
+INFO 2024/05/02 14:43:51 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 14:43:51 route.go:378: middleware hcondo
+INFO 2024/05/02 14:43:51 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 14:43:51 route.go:378: middleware hcondo
+INFO 2024/05/02 14:43:51 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 14:46:21 logrequest.go:14: 172.21.0.244:40098 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 14:46:28 logrequest.go:14: 172.21.0.244:40098 GET /japt/2024-03/2024-04/6
+2024/05/02 15:15:16 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 15:15:16 main.go:43: Starting app
+INFO 2024/05/02 15:15:16 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 15:15:16 route.go:378: middleware hcondo
+INFO 2024/05/02 15:15:16 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 15:15:16 route.go:378: middleware hcondo
+INFO 2024/05/02 15:15:16 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 15:16:22 logrequest.go:14: 172.21.0.244:50142 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 15:16:26 logrequest.go:14: 172.21.0.244:50142 GET /japt/2024-03/2024-04/6
+2024/05/02 15:20:29 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 15:20:29 main.go:43: Starting app
+INFO 2024/05/02 15:20:29 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 15:20:29 route.go:378: middleware hcondo
+INFO 2024/05/02 15:20:29 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 15:20:29 route.go:378: middleware hcondo
+INFO 2024/05/02 15:20:29 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 15:20:39 logrequest.go:14: 172.21.0.244:36080 GET /japt/2024-03/2024-04/6
+2024/05/02 15:23:13 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 15:23:13 main.go:43: Starting app
+INFO 2024/05/02 15:23:13 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 15:23:13 route.go:378: middleware hcondo
+INFO 2024/05/02 15:23:13 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 15:23:13 route.go:378: middleware hcondo
+INFO 2024/05/02 15:23:13 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 15:23:21 logrequest.go:14: 172.21.0.244:36286 GET /japt/2024-03/2024-04/6
+2024/05/02 15:29:01 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 15:29:01 main.go:43: Starting app
+INFO 2024/05/02 15:29:01 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 15:29:01 route.go:378: middleware hcondo
+INFO 2024/05/02 15:29:01 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 15:29:01 route.go:378: middleware hcondo
+INFO 2024/05/02 15:29:01 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 15:29:09 logrequest.go:14: 172.21.0.244:55242 GET /japt/2024-03/2024-04/6
+2024/05/02 15:53:49 main.go:35: Mensaje de Inicio
+INFO 2024/05/02 15:53:49 main.go:43: Starting app
+INFO 2024/05/02 15:53:49 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/02 15:53:49 route.go:378: middleware hcondo
+INFO 2024/05/02 15:53:49 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/02 15:53:49 route.go:378: middleware hcondo
+INFO 2024/05/02 15:53:49 server.go:38: 0.0.0.0:4430
+INFO 2024/05/02 15:54:04 logrequest.go:14: 172.21.0.244:35260 GET /japt/2024-03/2024-04/6
+INFO 2024/05/02 15:54:08 logrequest.go:14: 172.21.0.244:35260 GET /japt/2024-03/2024-04/6
+INFO 2024/05/02 16:05:34 logrequest.go:14: 172.21.0.244:38332 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/02 16:05:38 logrequest.go:14: 172.21.0.244:38332 GET /japt/2024-03/2024-04/6
+2024/05/03 11:07:36 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 11:07:36 main.go:43: Starting app
+INFO 2024/05/03 11:07:36 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 11:07:36 route.go:378: middleware hcondo
+INFO 2024/05/03 11:07:36 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 11:07:36 route.go:378: middleware hcondo
+INFO 2024/05/03 11:07:36 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 11:07:48 logrequest.go:14: [::1]:44408 GET /
+INFO 2024/05/03 11:07:48 logrequest.go:14: [::1]:44408 GET /static/css/bootstrap.css?1580161104
+INFO 2024/05/03 11:07:48 logrequest.go:14: [::1]:44412 GET /static/favicons/jpeg/imp_2_izq.jpg
+INFO 2024/05/03 11:07:48 logrequest.go:14: [::1]:44420 GET /static/favicons/jpeg/imp_2_cent.jpg
+INFO 2024/05/03 11:07:48 logrequest.go:14: [::1]:44420 GET /static/favicons/jpeg/imp_2_der.jpg
+INFO 2024/05/03 11:07:48 logrequest.go:14: [::1]:44408 GET /static/favicons/jpeg/imp_2_caset.jpg
+INFO 2024/05/03 11:07:48 logrequest.go:14: [::1]:44408 GET /static/js/jquery.min.js?1580161104
+INFO 2024/05/03 11:09:05 logrequest.go:14: 172.21.0.244:47216 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 11:09:10 logrequest.go:14: 172.21.0.244:47226 GET /japt/2024-03/2024-04/6
+2024/05/03 11:09:10 aparta.go:143: Resultado  no encontrado.
+2024/05/03 11:16:45 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 11:16:45 main.go:43: Starting app
+INFO 2024/05/03 11:16:45 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 11:16:45 route.go:378: middleware hcondo
+INFO 2024/05/03 11:16:45 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 11:16:45 route.go:378: middleware hcondo
+INFO 2024/05/03 11:16:45 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 11:17:00 logrequest.go:14: 172.21.0.244:44826 GET /japt/2024-03/2024-04/6
+2024/05/03 11:31:21 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 11:31:21 main.go:43: Starting app
+INFO 2024/05/03 11:31:21 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 11:31:21 route.go:378: middleware hcondo
+INFO 2024/05/03 11:31:21 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 11:31:21 route.go:378: middleware hcondo
+INFO 2024/05/03 11:31:21 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 11:32:31 logrequest.go:14: 172.21.0.244:52678 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 11:32:37 logrequest.go:14: 172.21.0.244:52678 GET /japt/2024-03/6
+2024/05/03 12:05:56 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 12:05:56 main.go:43: Starting app
+INFO 2024/05/03 12:05:56 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 12:05:56 route.go:378: middleware hcondo
+INFO 2024/05/03 12:05:56 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 12:05:56 route.go:378: middleware hcondo
+INFO 2024/05/03 12:05:56 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 12:06:06 logrequest.go:14: 172.21.0.244:33254 GET /japt/2024-03/6
+2024/05/03 12:08:07 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 12:08:07 main.go:43: Starting app
+INFO 2024/05/03 12:08:07 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 12:08:07 route.go:378: middleware hcondo
+INFO 2024/05/03 12:08:07 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 12:08:07 route.go:378: middleware hcondo
+INFO 2024/05/03 12:08:07 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 12:08:19 logrequest.go:14: 172.21.0.244:54448 GET /japt/2024-03/6
+2024/05/03 12:43:52 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 12:43:52 main.go:43: Starting app
+INFO 2024/05/03 12:43:52 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 12:43:52 route.go:378: middleware hcondo
+INFO 2024/05/03 12:43:52 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 12:43:52 route.go:378: middleware hcondo
+INFO 2024/05/03 12:43:52 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 12:50:17 logrequest.go:14: 172.21.0.84:34420 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 12:50:20 logrequest.go:14: 172.21.0.84:34434 GET /japt/2024-03/6
+2024/05/03 13:17:35 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 13:17:35 main.go:43: Starting app
+INFO 2024/05/03 13:17:35 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 13:17:35 route.go:378: middleware hcondo
+INFO 2024/05/03 13:17:35 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 13:17:35 route.go:378: middleware hcondo
+INFO 2024/05/03 13:17:35 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 13:18:38 logrequest.go:14: 172.21.0.84:53064 GET /japt/2024-03/6
+2024/05/03 13:20:56 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 13:20:56 main.go:43: Starting app
+INFO 2024/05/03 13:20:56 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 13:20:56 route.go:378: middleware hcondo
+INFO 2024/05/03 13:20:56 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 13:20:56 route.go:378: middleware hcondo
+INFO 2024/05/03 13:20:56 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 13:21:04 logrequest.go:14: 172.21.0.84:54474 GET /japt/2024-03/6
+2024/05/03 13:31:06 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 13:31:06 main.go:43: Starting app
+INFO 2024/05/03 13:31:06 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 13:31:06 route.go:378: middleware hcondo
+INFO 2024/05/03 13:31:06 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 13:31:06 route.go:378: middleware hcondo
+INFO 2024/05/03 13:31:06 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 13:31:16 logrequest.go:14: 172.21.0.84:48398 GET /japt/2024-03/6
+INFO 2024/05/03 14:27:57 logrequest.go:14: 172.21.0.84:35678 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 14:28:17 logrequest.go:14: 172.21.0.84:35678 GET /japt/2024-03/6
+2024/05/03 14:57:43 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 14:57:43 main.go:43: Starting app
+INFO 2024/05/03 14:57:43 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 14:57:43 route.go:378: middleware hcondo
+INFO 2024/05/03 14:57:43 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 14:57:43 route.go:378: middleware hcondo
+INFO 2024/05/03 14:57:43 server.go:38: 0.0.0.0:4430
+2024/05/03 15:02:59 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 15:02:59 main.go:43: Starting app
+INFO 2024/05/03 15:02:59 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 15:02:59 route.go:378: middleware hcondo
+INFO 2024/05/03 15:02:59 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 15:02:59 route.go:378: middleware hcondo
+INFO 2024/05/03 15:02:59 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 15:07:04 logrequest.go:14: 172.21.0.84:41046 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 15:07:07 logrequest.go:14: 172.21.0.84:41046 GET /japt/2024-03/6
+2024/05/03 15:29:40 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 15:29:40 main.go:43: Starting app
+INFO 2024/05/03 15:29:40 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 15:29:40 route.go:378: middleware hcondo
+INFO 2024/05/03 15:29:40 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 15:29:40 route.go:378: middleware hcondo
+INFO 2024/05/03 15:29:40 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 15:32:17 logrequest.go:14: 172.21.0.84:37278 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 15:32:21 logrequest.go:14: 172.21.0.84:37278 GET /japt/2024-03/6
+2024/05/03 15:40:50 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 15:40:50 main.go:43: Starting app
+INFO 2024/05/03 15:40:50 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 15:40:50 route.go:378: middleware hcondo
+INFO 2024/05/03 15:40:50 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 15:40:50 route.go:378: middleware hcondo
+INFO 2024/05/03 15:40:50 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 15:40:56 logrequest.go:14: 172.21.0.84:50542 GET /japt/2024-03/6
+INFO 2024/05/03 15:48:46 logrequest.go:14: 172.21.0.84:51442 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 15:48:49 logrequest.go:14: 172.21.0.84:51442 GET /japt/2024-03/6
+INFO 2024/05/03 16:10:06 logrequest.go:14: 172.21.0.84:42500 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/03 16:10:10 logrequest.go:14: 172.21.0.84:42500 GET /japt/2024-03/6
+INFO 2024/05/03 16:12:44 logrequest.go:14: 172.21.0.84:41436 GET /japt/2023-12/6
+2024/05/03 16:38:11 main.go:35: Mensaje de Inicio
+INFO 2024/05/03 16:38:11 main.go:43: Starting app
+INFO 2024/05/03 16:38:11 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/03 16:38:11 route.go:378: middleware hcondo
+INFO 2024/05/03 16:38:11 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/03 16:38:11 route.go:378: middleware hcondo
+INFO 2024/05/03 16:38:11 server.go:38: 0.0.0.0:4430
+INFO 2024/05/03 16:38:22 logrequest.go:14: [::1]:40258 GET /
+INFO 2024/05/03 16:38:26 logrequest.go:14: [::1]:40258 GET /login
+INFO 2024/05/03 16:38:51 logrequest.go:14: [::1]:40258 POST /login
+2024/05/03 16:38:51 login.go:88: Cuenta Incorreta  Resultado  no encontrado.
+INFO 2024/05/03 16:40:01 logrequest.go:14: [::1]:36384 POST /login
+INFO 2024/05/03 16:40:01 logrequest.go:14: [::1]:36384 GET /
+INFO 2024/05/03 16:40:08 logrequest.go:14: [::1]:36384 GET /logout
+INFO 2024/05/03 16:40:08 logrequest.go:14: [::1]:36384 GET /
+INFO 2024/05/03 16:42:32 logrequest.go:14: 172.21.0.84:47000 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/03 16:42:36 logrequest.go:14: 172.21.0.84:47000 GET /japt/2024-03/15
+2024/05/04 08:33:10 main.go:35: Mensaje de Inicio
+INFO 2024/05/04 08:33:10 main.go:43: Starting app
+INFO 2024/05/04 08:33:10 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/04 08:33:10 route.go:378: middleware hcondo
+INFO 2024/05/04 08:33:10 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/04 08:33:10 route.go:378: middleware hcondo
+INFO 2024/05/04 08:33:10 server.go:38: 0.0.0.0:4430
+INFO 2024/05/04 08:33:15 logrequest.go:14: 172.21.0.84:43994 GET /jlogin/liudmi/bGl1ZG1pMTU=
+2024/05/04 08:33:15 login.go:151: Resultado  no encontrado.
+INFO 2024/05/04 08:33:30 logrequest.go:14: 172.21.0.84:43994 GET /jlogin/liudmi/bGlkbWkxNQ==
+2024/05/04 08:33:30 login.go:151: Resultado  no encontrado.
+INFO 2024/05/04 08:34:04 logrequest.go:14: 172.21.0.84:43994 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/04 08:34:12 logrequest.go:14: 172.21.0.84:43994 GET /japt/2024-03/15
+2024/05/04 08:45:11 main.go:35: Mensaje de Inicio
+INFO 2024/05/04 08:45:11 main.go:43: Starting app
+INFO 2024/05/04 08:45:11 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/04 08:45:11 route.go:378: middleware hcondo
+INFO 2024/05/04 08:45:11 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/04 08:45:11 route.go:378: middleware hcondo
+INFO 2024/05/04 08:45:11 server.go:38: 0.0.0.0:4430
+INFO 2024/05/04 08:45:16 logrequest.go:14: 172.21.0.84:52426 GET /japt/2024-03/15
+INFO 2024/05/04 08:47:07 logrequest.go:14: 172.21.0.84:49900 GET /japt/2024-04/15
+INFO 2024/05/04 08:47:48 logrequest.go:14: 172.21.0.84:49900 GET /japt/2024-05/15
+2024/05/04 08:47:48 aparta.go:143: Resultado  no encontrado.
+INFO 2024/05/04 08:47:53 logrequest.go:14: 172.21.0.84:49900 GET /japt/2024-05/15
+2024/05/04 08:47:53 aparta.go:143: Resultado  no encontrado.
+INFO 2024/05/04 08:48:06 logrequest.go:14: 172.21.0.84:49900 GET /japt/2024-04/15
+2024/05/04 08:52:08 main.go:35: Mensaje de Inicio
+INFO 2024/05/04 08:52:08 main.go:43: Starting app
+INFO 2024/05/04 08:52:08 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/04 08:52:08 route.go:378: middleware hcondo
+INFO 2024/05/04 08:52:08 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/04 08:52:08 route.go:378: middleware hcondo
+INFO 2024/05/04 08:52:08 server.go:38: 0.0.0.0:4430
+INFO 2024/05/04 08:53:30 logrequest.go:14: 172.21.0.84:39624 GET /japt/2024-04/15
+INFO 2024/05/04 09:00:51 logrequest.go:14: 172.21.0.84:55392 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/04 09:01:03 logrequest.go:14: 172.21.0.84:55392 GET /japt/2024-04/15
+2024/05/04 09:07:00 main.go:35: Mensaje de Inicio
+INFO 2024/05/04 09:07:00 main.go:43: Starting app
+INFO 2024/05/04 09:07:00 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/04 09:07:00 route.go:378: middleware hcondo
+INFO 2024/05/04 09:07:00 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/04 09:07:00 route.go:378: middleware hcondo
+INFO 2024/05/04 09:07:00 server.go:38: 0.0.0.0:4430
+INFO 2024/05/04 09:08:04 logrequest.go:14: 172.21.0.84:40482 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/04 09:08:19 logrequest.go:14: 172.21.0.84:53740 GET /japt/2024-04/15
+2024/05/04 09:13:15 main.go:35: Mensaje de Inicio
+INFO 2024/05/04 09:13:15 main.go:43: Starting app
+INFO 2024/05/04 09:13:15 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/04 09:13:15 route.go:378: middleware hcondo
+INFO 2024/05/04 09:13:15 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/04 09:13:15 route.go:378: middleware hcondo
+INFO 2024/05/04 09:13:15 server.go:38: 0.0.0.0:4430
+INFO 2024/05/04 09:14:06 logrequest.go:14: 172.21.0.84:43176 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/04 09:14:41 logrequest.go:14: 172.21.0.84:41098 GET /japt/2024-04/15
+INFO 2024/05/04 09:18:24 logrequest.go:14: 172.21.0.84:41098 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/04 09:18:36 logrequest.go:14: 172.21.0.84:41098 GET /japt/2024-04/15
+2024/05/04 09:52:26 main.go:35: Mensaje de Inicio
+INFO 2024/05/04 09:52:26 main.go:43: Starting app
+INFO 2024/05/04 09:52:26 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/04 09:52:26 route.go:378: middleware hcondo
+INFO 2024/05/04 09:52:26 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/04 09:52:26 route.go:378: middleware hcondo
+INFO 2024/05/04 09:52:26 server.go:38: 0.0.0.0:4430
+INFO 2024/05/04 09:52:29 logrequest.go:14: 172.21.0.84:44270 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/04 09:52:46 logrequest.go:14: 172.21.0.84:40636 GET /jegre/2024-04-04
+INFO 2024/05/04 10:05:14 logrequest.go:14: 172.21.0.84:59538 GET /jegre/2024-04-04
+2024/05/06 13:04:36 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 13:04:36 main.go:43: Starting app
+INFO 2024/05/06 13:04:36 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 13:04:36 route.go:378: middleware hcondo
+INFO 2024/05/06 13:04:36 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 13:04:36 route.go:378: middleware hcondo
+INFO 2024/05/06 13:04:36 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 13:08:08 logrequest.go:14: [::1]:36498 GET /
+INFO 2024/05/06 13:08:08 logrequest.go:14: [::1]:36498 GET /static/css/bootstrap.css?1580161104
+INFO 2024/05/06 13:08:08 logrequest.go:14: [::1]:36504 GET /static/favicons/jpeg/imp_2_izq.jpg
+INFO 2024/05/06 13:08:08 logrequest.go:14: [::1]:36506 GET /static/favicons/jpeg/imp_2_cent.jpg
+INFO 2024/05/06 13:08:08 logrequest.go:14: [::1]:36506 GET /static/favicons/jpeg/imp_2_der.jpg
+INFO 2024/05/06 13:08:08 logrequest.go:14: [::1]:36506 GET /static/favicons/jpeg/imp_2_caset.jpg
+INFO 2024/05/06 13:08:08 logrequest.go:14: [::1]:36498 GET /static/js/jquery.min.js?1580161104
+2024/05/06 13:16:42 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 13:16:42 main.go:43: Starting app
+INFO 2024/05/06 13:16:42 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 13:16:42 route.go:378: middleware hcondo
+INFO 2024/05/06 13:16:42 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 13:16:42 route.go:378: middleware hcondo
+INFO 2024/05/06 13:16:42 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 13:22:47 logrequest.go:14: 172.21.0.84:47402 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/06 13:23:55 logrequest.go:14: 172.21.0.84:53314 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 13:41:14 logrequest.go:14: 172.21.0.84:49288 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 13:45:48 logrequest.go:14: 172.21.0.84:41790 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 13:56:54 logrequest.go:14: 172.21.0.84:34046 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 14:06:32 logrequest.go:14: 172.21.0.84:58932 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 14:18:53 logrequest.go:14: 172.21.0.84:34992 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/06 14:38:41 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 14:38:41 main.go:43: Starting app
+INFO 2024/05/06 14:38:41 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 14:38:41 route.go:378: middleware hcondo
+INFO 2024/05/06 14:38:41 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 14:38:41 route.go:378: middleware hcondo
+INFO 2024/05/06 14:38:41 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 14:40:01 logrequest.go:14: 172.21.0.84:54500 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 14:40:09 logrequest.go:14: 172.21.0.84:53458 GET /japt/2024-04/15
+INFO 2024/05/06 14:40:55 logrequest.go:14: 172.21.0.84:56372 GET /jegre/2024-04-06
+2024/05/06 15:02:11 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 15:02:11 main.go:43: Starting app
+INFO 2024/05/06 15:02:11 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 15:02:11 route.go:382: middleware hcondo
+INFO 2024/05/06 15:02:11 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 15:02:11 route.go:382: middleware hcondo
+INFO 2024/05/06 15:02:11 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 15:02:21 logrequest.go:14: 172.21.0.84:32932 GET /jegre/2024-04-06
+INFO 2024/05/06 15:02:21 logrequest.go:14: 172.21.0.84:32932 GET /jegre/2024-04-06/
+2024/05/06 15:02:21 server.go:3214: http: panic serving 172.21.0.84:32932: runtime error: slice bounds out of range [:10] with length 0
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8fec20?, 0xc000122078?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JEgreGET({0x9f73f8, 0xc000128000}, 0xc00007e2c0?)
+	/u13/www/html/go/src/hcondo/app/controller/egreso.go:30 +0x932
+net/http.HandlerFunc.ServeHTTP(0xc000146088?, {0x9f73f8?, 0xc000128000?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9f73f8, 0xc000128000}, 0xcea3a0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc000114000?, {0x9f73f8?, 0xc000128000?}, 0x8abce0?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func52({0x9f73f8, 0xc000128000}, 0xc000116000?, {0xc000144000?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc00008a720, {0x9f73f8, 0xc000128000}, 0xc000114000)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc0000cd490, {0x9f73f8, 0xc000128000}, 0xc000114000)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9f73f8, 0xc000128000}, 0xc000114000)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9f73f8?, 0xc000128000?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9f73f8?, 0xc000128000?}, 0xc00011e000?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd19940?, {0x9f73f8?, 0xc000128000?}, 0xc0000d3b50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc00020e690?}, {0x9f73f8?, 0xc000128000?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00024e000, {0x9f8078, 0xc0001a1350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+INFO 2024/05/06 15:02:21 logrequest.go:14: 172.21.0.84:32944 GET /jegre/2024-04-06/
+2024/05/06 15:02:21 server.go:3214: http: panic serving 172.21.0.84:32944: runtime error: slice bounds out of range [:10] with length 0
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8fec20?, 0xc000122108?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JEgreGET({0x9f73f8, 0xc0001282a0}, 0xc00007e2c0?)
+	/u13/www/html/go/src/hcondo/app/controller/egreso.go:30 +0x932
+net/http.HandlerFunc.ServeHTTP(0xc0001461a8?, {0x9f73f8?, 0xc0001282a0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9f73f8, 0xc0001282a0}, 0xcea3a0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc000114100?, {0x9f73f8?, 0xc0001282a0?}, 0x8abce0?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func52({0x9f73f8, 0xc0001282a0}, 0xc000116040?, {0xc000144040?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc00008a720, {0x9f73f8, 0xc0001282a0}, 0xc000114100)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc0000cd490, {0x9f73f8, 0xc0001282a0}, 0xc000114100)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9f73f8, 0xc0001282a0}, 0xc000114100)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9f73f8?, 0xc0001282a0?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9f73f8?, 0xc0001282a0?}, 0xc00011e2c0?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd19940?, {0x9f73f8?, 0xc0001282a0?}, 0xc000164b50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc0001121e0?}, {0x9f73f8?, 0xc0001282a0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001181b0, {0x9f8078, 0xc0001a1350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+2024/05/06 15:10:16 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 15:10:16 main.go:43: Starting app
+INFO 2024/05/06 15:10:16 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 15:10:16 route.go:382: middleware hcondo
+INFO 2024/05/06 15:10:16 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 15:10:16 route.go:382: middleware hcondo
+INFO 2024/05/06 15:10:16 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 15:10:27 logrequest.go:14: 172.21.0.84:51650 GET /jegre/2024-04-06/
+2024/05/06 15:10:27 server.go:3214: http: panic serving 172.21.0.84:51650: runtime error: slice bounds out of range [:7] with length 0
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8fec20?, 0xc0002080d8?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JEgreGET({0x9f73f8, 0xc0002460e0}, 0xc00015e2a0?)
+	/u13/www/html/go/src/hcondo/app/controller/egreso.go:30 +0x952
+net/http.HandlerFunc.ServeHTTP(0xc00025c508?, {0x9f73f8?, 0xc0002460e0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9f73f8, 0xc0002460e0}, 0xcea3a0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc00025a000?, {0x9f73f8?, 0xc0002460e0?}, 0x8abce0?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func52({0x9f73f8, 0xc0002460e0}, 0xc000210260?, {0xc00021a240?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0001306c0, {0x9f73f8, 0xc0002460e0}, 0xc00025a000)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc00014f490, {0x9f73f8, 0xc0002460e0}, 0xc00025a000)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9f73f8, 0xc0002460e0}, 0xc00025a000)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9f73f8?, 0xc0002460e0?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9f73f8?, 0xc0002460e0?}, 0xc000266000?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd19940?, {0x9f73f8?, 0xc0002460e0?}, 0xc000157b50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc000216690?}, {0x9f73f8?, 0xc0002460e0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000256000, {0x9f8078, 0xc0001b3350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+2024/05/06 15:12:03 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 15:12:03 main.go:43: Starting app
+INFO 2024/05/06 15:12:03 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 15:12:03 route.go:382: middleware hcondo
+INFO 2024/05/06 15:12:03 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 15:12:03 route.go:382: middleware hcondo
+INFO 2024/05/06 15:12:03 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 15:12:11 logrequest.go:14: 172.21.0.84:59110 GET /jegre/2024-04-06/
+2024/05/06 15:51:48 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 15:51:48 main.go:43: Starting app
+INFO 2024/05/06 15:51:48 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 15:51:48 route.go:387: middleware hcondo
+INFO 2024/05/06 15:51:48 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 15:51:48 route.go:387: middleware hcondo
+INFO 2024/05/06 15:51:48 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 15:54:07 logrequest.go:14: 172.21.0.84:42744 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 15:57:40 logrequest.go:14: 172.21.0.84:53838 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 15:57:46 logrequest.go:14: 172.21.0.84:53838 GET /jcondo/2024-04-06
+INFO 2024/05/06 15:58:24 logrequest.go:14: 172.21.0.84:53838 GET /jegre/2024-04-06
+INFO 2024/05/06 15:58:24 logrequest.go:14: 172.21.0.84:53838 GET /jegre/2024-04-06/
+INFO 2024/05/06 15:59:06 logrequest.go:14: 172.21.0.84:53838 GET /jingre/2023-09-01/2024-04-06
+2024/05/06 16:24:20 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 16:24:20 main.go:43: Starting app
+INFO 2024/05/06 16:24:20 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 16:24:20 route.go:392: middleware hcondo
+INFO 2024/05/06 16:24:20 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 16:24:20 route.go:392: middleware hcondo
+INFO 2024/05/06 16:24:20 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 16:25:23 logrequest.go:14: 172.21.0.84:46052 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 16:25:41 logrequest.go:14: 172.21.0.84:46052 GET /jingre/2023-09-01/2024-04-06
+INFO 2024/05/06 16:25:41 logrequest.go:14: 172.21.0.84:46052 GET /
+2024/05/06 16:33:01 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 16:33:01 main.go:43: Starting app
+INFO 2024/05/06 16:33:01 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 16:33:01 route.go:392: middleware hcondo
+INFO 2024/05/06 16:33:01 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 16:33:01 route.go:392: middleware hcondo
+INFO 2024/05/06 16:33:01 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 16:33:12 logrequest.go:14: 172.21.0.84:58082 GET /jingre/2023-09-01/2024-04-06
+INFO 2024/05/06 16:33:12 logrequest.go:14: 172.21.0.84:58082 GET /
+2024/05/06 16:35:51 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 16:35:51 main.go:43: Starting app
+INFO 2024/05/06 16:35:51 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 16:35:51 route.go:392: middleware hcondo
+INFO 2024/05/06 16:35:51 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 16:35:51 route.go:392: middleware hcondo
+INFO 2024/05/06 16:35:51 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 16:36:08 logrequest.go:14: 172.21.0.84:46356 GET /jingre/2023-09-01/2024-04-06
+INFO 2024/05/06 16:36:40 logrequest.go:14: 172.21.0.84:46356 GET /jingre/2022-08-01/2024-04-06
+INFO 2024/05/06 16:37:02 logrequest.go:14: 172.21.0.84:46356 GET /jingre/2023-02-01/2024-04-06
+2024/05/06 17:00:48 main.go:35: Mensaje de Inicio
+INFO 2024/05/06 17:00:48 main.go:43: Starting app
+INFO 2024/05/06 17:00:48 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/06 17:00:48 route.go:392: middleware hcondo
+INFO 2024/05/06 17:00:48 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/06 17:00:48 route.go:392: middleware hcondo
+INFO 2024/05/06 17:00:48 server.go:38: 0.0.0.0:4430
+INFO 2024/05/06 17:00:59 logrequest.go:14: 172.21.0.84:45606 GET /jingre/2023-02-01/2024-04-06
+INFO 2024/05/06 17:02:37 logrequest.go:14: 172.21.0.84:45606 GET /japt/2024-01/15
+INFO 2024/05/06 17:03:21 logrequest.go:14: 172.21.0.84:39142 GET /jcondo/2024-04-06
+INFO 2024/05/06 17:12:22 logrequest.go:14: 172.21.0.84:45856 GET /japt/2024-04/15
+INFO 2024/05/06 17:12:31 logrequest.go:14: 172.21.0.84:45856 GET /jegre/2024-04-06
+INFO 2024/05/06 17:12:31 logrequest.go:14: 172.21.0.84:45856 GET /jegre/2024-04-06/
+INFO 2024/05/06 17:22:19 logrequest.go:14: 172.21.0.84:40624 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/06 17:22:22 logrequest.go:14: 172.21.0.84:40624 GET /jegre/2024-04-06
+INFO 2024/05/06 17:22:22 logrequest.go:14: 172.21.0.84:40624 GET /jegre/2024-04-06/
+2024/05/07 07:58:43 main.go:35: Mensaje de Inicio
+INFO 2024/05/07 07:58:43 main.go:43: Starting app
+INFO 2024/05/07 07:58:43 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/07 07:58:43 route.go:392: middleware hcondo
+INFO 2024/05/07 07:58:43 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/07 07:58:43 route.go:392: middleware hcondo
+INFO 2024/05/07 07:58:43 server.go:38: 0.0.0.0:4430
+INFO 2024/05/07 08:31:04 logrequest.go:14: 172.21.0.84:35332 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/07 08:31:20 logrequest.go:14: 172.21.0.84:35332 GET /japt/2024-04/15
+INFO 2024/05/07 08:32:11 logrequest.go:14: 172.21.0.84:49744 GET /jegre/2024-04-07
+INFO 2024/05/07 08:32:11 logrequest.go:14: 172.21.0.84:49744 GET /jegre/2024-04-07/
+INFO 2024/05/07 08:33:23 logrequest.go:14: 172.21.0.84:43616 GET /jcondo/2024-04-07
+INFO 2024/05/07 08:34:18 logrequest.go:14: 172.21.0.84:43616 GET /jingre/2022-01-01/2024-04-07
+INFO 2024/05/07 08:37:22 logrequest.go:14: 172.21.0.84:59664 GET /jegre/2024-04-07/
+INFO 2024/05/07 08:38:01 logrequest.go:14: 172.21.0.84:59664 GET /japt/2024-04/15
+INFO 2024/05/07 09:13:30 logrequest.go:14: 172.21.0.84:36840 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/07 09:13:35 logrequest.go:14: 172.21.0.84:36840 GET /jegre/2024-04-07
+INFO 2024/05/07 09:13:35 logrequest.go:14: 172.21.0.84:36840 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:14:13 logrequest.go:14: 172.21.0.84:37048 GET /jcondo/2024-04-07
+INFO 2024/05/07 09:14:31 logrequest.go:14: 172.21.0.84:51056 GET /japt/2024-04/15
+INFO 2024/05/07 09:20:32 logrequest.go:14: 172.21.0.84:46838 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:22:39 logrequest.go:14: 172.21.0.84:46838 GET /japt/2024-04/15
+INFO 2024/05/07 09:22:55 logrequest.go:14: 172.21.0.84:46838 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:23:14 logrequest.go:14: 172.21.0.84:46838 GET /japt/2024-04/15
+INFO 2024/05/07 09:38:14 logrequest.go:14: 172.21.0.84:51612 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:40:12 logrequest.go:14: 172.21.0.84:51612 GET /jcondo/2024-04-07
+INFO 2024/05/07 09:40:21 logrequest.go:14: 172.21.0.84:51612 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:40:59 logrequest.go:14: 172.21.0.84:44048 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/07 09:41:03 logrequest.go:14: 172.21.0.84:44048 GET /japt/2024-04/15
+INFO 2024/05/07 09:41:29 logrequest.go:14: 172.21.0.84:44048 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:41:47 logrequest.go:14: 172.21.0.84:49510 GET /jcondo/2024-04-07
+INFO 2024/05/07 09:41:58 logrequest.go:14: 172.21.0.84:49510 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:42:19 logrequest.go:14: 172.21.0.84:49510 GET /jingre/2024-04-07/2024-04-07
+INFO 2024/05/07 09:42:40 logrequest.go:14: 172.21.0.84:49510 GET /jingre/2022-12-01/2024-04-07
+INFO 2024/05/07 09:43:42 logrequest.go:14: 172.21.0.84:49510 GET /jingre/2022-10-01/2024-04-07
+INFO 2024/05/07 09:44:17 logrequest.go:14: 172.21.0.84:49510 GET /jcondo/2024-04-07
+INFO 2024/05/07 09:44:25 logrequest.go:14: 172.21.0.84:49510 GET /jegre/2024-04-07/
+INFO 2024/05/07 09:44:34 logrequest.go:14: 172.21.0.84:49510 GET /japt/2024-04/15
+INFO 2024/05/07 09:49:12 logrequest.go:14: 172.21.0.84:40750 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/07 09:49:15 logrequest.go:14: 172.21.0.84:40750 GET /japt/2024-04/15
+INFO 2024/05/07 09:49:34 logrequest.go:14: 172.21.0.84:40750 GET /jingre/2023-06-01/2024-04-07
+INFO 2024/05/07 09:56:31 logrequest.go:14: 172.21.0.84:32952 GET /jcondo/2024-04-07
+INFO 2024/05/07 09:56:41 logrequest.go:14: 172.21.0.84:32952 GET /jegre/2024-04-07/
+2024/05/08 07:55:30 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 07:55:30 main.go:43: Starting app
+INFO 2024/05/08 07:55:30 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 07:55:30 route.go:392: middleware hcondo
+INFO 2024/05/08 07:55:30 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 07:55:30 route.go:392: middleware hcondo
+INFO 2024/05/08 07:55:30 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 08:05:39 logrequest.go:14: 172.21.0.84:54890 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 08:05:44 logrequest.go:14: 172.21.0.84:54890 GET /japt/2024-04/15
+INFO 2024/05/08 08:09:49 logrequest.go:14: 172.21.0.84:48024 GET /jegre/2024-04-08
+INFO 2024/05/08 08:09:49 logrequest.go:14: 172.21.0.84:48024 GET /jegre/2024-04-08/
+INFO 2024/05/08 09:02:07 logrequest.go:14: 172.21.0.84:41260 GET /jegre/2024-04-08/
+INFO 2024/05/08 09:02:41 logrequest.go:14: 172.21.0.84:41260 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 09:02:46 logrequest.go:14: 172.21.0.84:41260 GET /japt/2024-04/15
+INFO 2024/05/08 09:03:18 logrequest.go:14: 172.21.0.84:48466 GET /jegre/2024-04-08/
+INFO 2024/05/08 09:16:17 logrequest.go:14: 172.21.0.84:46712 GET /jcondo/2024-04-08
+INFO 2024/05/08 09:17:32 logrequest.go:14: 172.21.0.84:46712 GET /jegre/2024-04-08/
+INFO 2024/05/08 10:39:25 logrequest.go:14: 172.21.0.84:41774 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/08 10:39:29 logrequest.go:14: 172.21.0.84:41774 GET /japt/2024-04/6
+INFO 2024/05/08 10:40:01 logrequest.go:14: 172.21.0.84:45108 GET /jegre/2024-04-08
+INFO 2024/05/08 10:40:01 logrequest.go:14: 172.21.0.84:45108 GET /jegre/2024-04-08/
+INFO 2024/05/08 11:37:50 logrequest.go:14: 172.21.0.84:48888 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 11:38:05 logrequest.go:14: 172.21.0.84:44912 GET /japt/2024-04/15
+INFO 2024/05/08 11:40:24 logrequest.go:14: 172.21.0.84:43426 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 11:40:28 logrequest.go:14: 172.21.0.84:43426 GET /japt/2024-04/15
+INFO 2024/05/08 11:53:56 logrequest.go:14: 172.21.0.84:60256 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 11:53:59 logrequest.go:14: 172.21.0.84:60256 GET /japt/2024-04/15
+INFO 2024/05/08 12:10:46 logrequest.go:14: 172.21.0.84:50090 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 12:10:52 logrequest.go:14: 172.21.0.84:50090 GET /japt/2024-04/15
+2024/05/08 14:49:50 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 14:49:50 main.go:43: Starting app
+INFO 2024/05/08 14:49:50 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 14:49:50 route.go:392: middleware hcondo
+INFO 2024/05/08 14:49:50 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 14:49:50 route.go:392: middleware hcondo
+INFO 2024/05/08 14:49:50 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 14:52:42 logrequest.go:14: 172.21.0.84:56812 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 14:52:50 logrequest.go:14: 172.21.0.84:56812 GET /japt/2024-04/15
+2024/05/08 15:58:27 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 15:58:27 main.go:43: Starting app
+INFO 2024/05/08 15:58:27 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 15:58:27 route.go:392: middleware hcondo
+INFO 2024/05/08 15:58:27 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 15:58:27 route.go:392: middleware hcondo
+INFO 2024/05/08 15:58:27 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 15:59:26 logrequest.go:14: 172.21.0.84:40958 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 16:00:09 logrequest.go:14: 172.21.0.84:37362 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/08 16:01:43 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:01:43 main.go:43: Starting app
+INFO 2024/05/08 16:01:43 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:01:43 route.go:393: middleware hcondo
+INFO 2024/05/08 16:01:43 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:01:43 route.go:393: middleware hcondo
+INFO 2024/05/08 16:01:43 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:01:56 logrequest.go:14: 172.21.0.84:32770 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 16:01:56 logrequest.go:14: 172.21.0.84:32770 GET /
+INFO 2024/05/08 16:02:34 logrequest.go:14: 172.21.0.84:32770 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/08 16:02:34 logrequest.go:14: 172.21.0.84:32770 GET /
+2024/05/08 16:04:26 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:04:26 main.go:43: Starting app
+INFO 2024/05/08 16:04:26 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:04:26 route.go:393: middleware hcondo
+INFO 2024/05/08 16:04:26 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:04:26 route.go:393: middleware hcondo
+INFO 2024/05/08 16:04:26 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:04:36 logrequest.go:14: 172.21.0.84:56226 GET /jlogin/gato/cGFyZG8xNQ==
+INFO 2024/05/08 16:05:16 logrequest.go:14: 172.21.0.84:56226 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/08 16:06:10 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:06:10 main.go:43: Starting app
+INFO 2024/05/08 16:06:10 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:06:10 route.go:393: middleware hcondo
+INFO 2024/05/08 16:06:10 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:06:10 route.go:393: middleware hcondo
+INFO 2024/05/08 16:06:10 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:06:21 logrequest.go:14: 172.21.0.84:54836 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/08 16:10:50 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:10:50 main.go:43: Starting app
+INFO 2024/05/08 16:10:50 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:10:50 route.go:393: middleware hcondo
+INFO 2024/05/08 16:10:50 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:10:50 route.go:393: middleware hcondo
+INFO 2024/05/08 16:10:50 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:11:01 logrequest.go:14: 172.21.0.84:35964 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/08 16:13:07 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:13:07 main.go:43: Starting app
+INFO 2024/05/08 16:13:07 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:13:07 route.go:393: middleware hcondo
+INFO 2024/05/08 16:13:07 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:13:07 route.go:393: middleware hcondo
+INFO 2024/05/08 16:13:07 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:13:17 logrequest.go:14: 172.21.0.84:34230 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/08 16:14:16 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:14:16 main.go:43: Starting app
+INFO 2024/05/08 16:14:16 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:14:16 route.go:393: middleware hcondo
+INFO 2024/05/08 16:14:16 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:14:16 route.go:393: middleware hcondo
+INFO 2024/05/08 16:14:16 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:14:27 logrequest.go:14: 172.21.0.84:53936 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/08 16:20:00 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:20:00 main.go:43: Starting app
+INFO 2024/05/08 16:20:00 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:20:00 route.go:393: middleware hcondo
+INFO 2024/05/08 16:20:00 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:20:00 route.go:393: middleware hcondo
+INFO 2024/05/08 16:20:00 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:20:07 logrequest.go:14: 172.21.0.84:53536 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 16:20:13 logrequest.go:14: 172.21.0.84:53536 GET /japt/2024-04/15
+2024/05/08 16:37:24 main.go:35: Mensaje de Inicio
+INFO 2024/05/08 16:37:24 main.go:43: Starting app
+INFO 2024/05/08 16:37:24 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/08 16:37:24 route.go:393: middleware hcondo
+INFO 2024/05/08 16:37:24 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/08 16:37:24 route.go:393: middleware hcondo
+INFO 2024/05/08 16:37:24 server.go:38: 0.0.0.0:4430
+INFO 2024/05/08 16:37:43 logrequest.go:14: 172.21.0.84:56502 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 16:37:48 logrequest.go:14: 172.21.0.84:56502 GET /japt/2024-04/15
+INFO 2024/05/08 16:37:55 logrequest.go:14: 172.21.0.84:56502 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 16:38:47 logrequest.go:14: 172.21.0.84:56502 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 16:38:50 logrequest.go:14: 172.21.0.84:56502 GET /japt/2024-04/15
+INFO 2024/05/08 17:24:36 logrequest.go:14: 172.21.0.84:36434 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/08 17:24:41 logrequest.go:14: 172.21.0.84:36434 GET /japt/2024-04/15
+2024/05/10 08:39:31 main.go:35: Mensaje de Inicio
+INFO 2024/05/10 08:39:31 main.go:43: Starting app
+INFO 2024/05/10 08:39:31 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/10 08:39:31 route.go:393: middleware hcondo
+INFO 2024/05/10 08:39:31 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/10 08:39:31 route.go:393: middleware hcondo
+INFO 2024/05/10 08:39:31 server.go:38: 0.0.0.0:4430
+INFO 2024/05/10 08:40:57 logrequest.go:14: 172.21.0.84:41714 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/10 08:41:07 logrequest.go:14: 172.21.0.84:41714 GET /japt/2024-04/15
+2024/05/10 09:14:07 main.go:35: Mensaje de Inicio
+INFO 2024/05/10 09:14:07 main.go:43: Starting app
+INFO 2024/05/10 09:14:07 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/10 09:14:07 route.go:393: middleware hcondo
+INFO 2024/05/10 09:14:07 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/10 09:14:07 route.go:393: middleware hcondo
+INFO 2024/05/10 09:14:07 server.go:38: 0.0.0.0:4430
+INFO 2024/05/10 09:14:44 logrequest.go:14: 172.21.0.84:60026 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/10 09:14:48 logrequest.go:14: 172.21.0.84:60026 GET /japt/2024-04/15
+INFO 2024/05/10 10:13:55 logrequest.go:14: 127.0.0.1:40720 GET /set
+INFO 2024/05/10 10:14:45 logrequest.go:14: 127.0.0.1:37282 GET /japt/2024-04/15
+INFO 2024/05/10 10:15:28 logrequest.go:14: 172.21.0.84:36694 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/10 10:16:08 logrequest.go:14: 127.0.0.1:46094 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/10 10:23:14 main.go:35: Mensaje de Inicio
+INFO 2024/05/10 10:23:14 main.go:43: Starting app
+INFO 2024/05/10 10:23:14 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/10 10:23:14 route.go:393: middleware hcondo
+INFO 2024/05/10 10:23:14 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/10 10:23:14 route.go:393: middleware hcondo
+INFO 2024/05/10 10:23:14 server.go:38: 0.0.0.0:4430
+INFO 2024/05/10 10:23:51 logrequest.go:14: 127.0.0.1:49218 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/10 11:41:16 logrequest.go:14: 127.0.0.1:43140 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/10 13:08:38 logrequest.go:14: 127.0.0.1:43904 GET /user/register
+INFO 2024/05/10 13:10:18 logrequest.go:14: 127.0.0.1:44768 GET /apto/register
+2024/05/10 13:40:18 main.go:35: Mensaje de Inicio
+INFO 2024/05/10 13:40:18 main.go:43: Starting app
+INFO 2024/05/10 13:40:18 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/10 13:40:18 route.go:393: middleware hcondo
+INFO 2024/05/10 13:40:18 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/10 13:40:18 route.go:393: middleware hcondo
+INFO 2024/05/10 13:40:18 server.go:38: 0.0.0.0:4430
+INFO 2024/05/10 13:40:42 logrequest.go:14: 127.0.0.1:50982 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/10 14:17:51 main.go:35: Mensaje de Inicio
+INFO 2024/05/10 14:17:51 main.go:43: Starting app
+INFO 2024/05/10 14:17:51 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/10 14:17:51 route.go:393: middleware hcondo
+INFO 2024/05/10 14:17:51 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/10 14:17:51 route.go:393: middleware hcondo
+INFO 2024/05/10 14:17:51 server.go:38: 0.0.0.0:4430
+INFO 2024/05/10 14:18:16 logrequest.go:14: 127.0.0.1:37110 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/10 14:21:45 logrequest.go:14: 172.21.0.84:47264 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/10 14:23:10 logrequest.go:14: 172.21.0.84:33738 GET /japt/2024-04/15
+2024/05/11 08:20:38 main.go:35: Mensaje de Inicio
+INFO 2024/05/11 08:20:38 main.go:43: Starting app
+INFO 2024/05/11 08:20:38 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/11 08:20:38 route.go:393: middleware hcondo
+INFO 2024/05/11 08:20:38 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/11 08:20:38 route.go:393: middleware hcondo
+INFO 2024/05/11 08:20:38 server.go:38: 0.0.0.0:4430
+2024/05/13 08:01:02 main.go:35: Mensaje de Inicio
+INFO 2024/05/13 08:01:02 main.go:43: Starting app
+INFO 2024/05/13 08:01:02 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/13 08:01:02 route.go:393: middleware hcondo
+INFO 2024/05/13 08:01:02 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/13 08:01:02 route.go:393: middleware hcondo
+INFO 2024/05/13 08:01:02 server.go:38: 0.0.0.0:4430
+INFO 2024/05/13 08:04:21 logrequest.go:14: 127.0.0.1:59496 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/13 09:50:38 logrequest.go:14: 172.21.0.84:39318 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/13 10:54:38 logrequest.go:14: 172.21.0.84:40724 GET /japt/2024-04/15
+2024/05/13 10:58:12 main.go:35: Mensaje de Inicio
+INFO 2024/05/13 10:58:12 main.go:43: Starting app
+INFO 2024/05/13 10:58:12 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/13 10:58:12 route.go:393: middleware hcondo
+INFO 2024/05/13 10:58:12 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/13 10:58:12 route.go:393: middleware hcondo
+INFO 2024/05/13 10:58:12 server.go:38: 0.0.0.0:4430
+INFO 2024/05/13 10:58:20 logrequest.go:14: 172.21.0.84:44342 GET /japt/2024-04/15
+INFO 2024/05/13 16:48:11 logrequest.go:14: 172.21.0.84:36652 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/15 08:05:35 main.go:35: Mensaje de Inicio
+INFO 2024/05/15 08:05:35 main.go:43: Starting app
+INFO 2024/05/15 08:05:35 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/15 08:05:35 route.go:393: middleware hcondo
+INFO 2024/05/15 08:05:35 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/15 08:05:35 route.go:393: middleware hcondo
+INFO 2024/05/15 08:05:35 server.go:38: 0.0.0.0:4430
+INFO 2024/05/15 08:11:05 logrequest.go:14: 172.21.0.84:38544 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/15 16:33:03 logrequest.go:14: 172.21.0.84:59652 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/15 17:04:12 logrequest.go:14: 172.21.0.84:54016 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/15 17:07:51 logrequest.go:14: 172.21.0.84:39774 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/15 17:08:28 logrequest.go:14: 172.21.0.84:39774 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/15 17:09:34 logrequest.go:14: 172.21.0.84:39774 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/17 08:03:14 main.go:35: Mensaje de Inicio
+INFO 2024/05/17 08:03:14 main.go:43: Starting app
+INFO 2024/05/17 08:03:14 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/17 08:03:14 route.go:393: middleware hcondo
+INFO 2024/05/17 08:03:14 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/17 08:03:15 route.go:393: middleware hcondo
+INFO 2024/05/17 08:03:15 server.go:38: 0.0.0.0:4430
+INFO 2024/05/17 08:04:54 logrequest.go:14: 172.21.0.84:55854 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/17 09:17:01 main.go:35: Mensaje de Inicio
+INFO 2024/05/17 09:17:01 main.go:43: Starting app
+INFO 2024/05/17 09:17:01 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/17 09:17:01 route.go:393: middleware hcondo
+INFO 2024/05/17 09:17:01 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/17 09:17:01 route.go:393: middleware hcondo
+INFO 2024/05/17 09:17:01 server.go:38: 0.0.0.0:4430
+INFO 2024/05/17 09:17:29 logrequest.go:14: 172.21.0.84:46980 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/17 09:24:43 main.go:35: Mensaje de Inicio
+INFO 2024/05/17 09:24:43 main.go:43: Starting app
+INFO 2024/05/17 09:24:43 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/17 09:24:43 route.go:393: middleware hcondo
+INFO 2024/05/17 09:24:43 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/17 09:24:43 route.go:393: middleware hcondo
+INFO 2024/05/17 09:24:43 server.go:38: 0.0.0.0:4430
+INFO 2024/05/17 09:25:02 logrequest.go:14: 172.21.0.84:57068 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/17 09:25:19 logrequest.go:14: 172.21.0.84:57068 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/17 09:30:38 logrequest.go:14: 172.21.0.84:45160 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/17 09:39:52 main.go:35: Mensaje de Inicio
+INFO 2024/05/17 09:39:52 main.go:43: Starting app
+INFO 2024/05/17 09:39:52 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/17 09:39:52 route.go:393: middleware hcondo
+INFO 2024/05/17 09:39:52 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/17 09:39:52 route.go:393: middleware hcondo
+INFO 2024/05/17 09:39:52 server.go:38: 0.0.0.0:4430
+INFO 2024/05/17 09:40:03 logrequest.go:14: 172.21.0.84:49814 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/17 09:43:14 logrequest.go:14: 172.21.0.84:38212 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/17 10:12:57 logrequest.go:14: 172.21.0.84:45386 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/17 10:13:45 logrequest.go:14: 172.21.0.84:45598 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/17 10:17:26 logrequest.go:14: 172.21.0.84:43832 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/17 10:18:31 logrequest.go:14: 172.21.0.84:43806 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/18 11:19:29 main.go:35: Mensaje de Inicio
+INFO 2024/05/18 11:19:29 main.go:43: Starting app
+INFO 2024/05/18 11:19:29 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/18 11:19:29 route.go:393: middleware hcondo
+INFO 2024/05/18 11:19:29 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/18 11:19:29 route.go:393: middleware hcondo
+INFO 2024/05/18 11:19:29 server.go:38: 0.0.0.0:4430
+INFO 2024/05/18 11:27:49 logrequest.go:14: 172.21.0.84:48594 GET /jlogin/ludmi/bGp1ZG1pMTU=
+2024/05/18 11:27:49 login.go:168: <nil>
+2024/05/18 11:27:49 server.go:3214: http: panic serving 172.21.0.84:48594: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/opt/go/src/net/http/server.go:1868 +0xb9
+panic({0x8b78a0?, 0xcda070?})
+	/opt/go/src/runtime/panic.go:920 +0x270
+hcondo/app/controller.JLoginGET({0x9fa1d8, 0xc0002460e0}, 0xc00015e2a0?)
+	/u13/www/html/go/src/hcondo/app/controller/login.go:170 +0x774
+net/http.HandlerFunc.ServeHTTP(0xc00025c1a8?, {0x9fa1d8?, 0xc0002460e0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route/middleware/acl.DisallowAuth.func1({0x9fa1d8, 0xc0002460e0}, 0xcee3c0?)
+	/u13/www/html/go/src/hcondo/app/route/middleware/acl/acl.go:25 +0xd6
+net/http.HandlerFunc.ServeHTTP(0xc00025a000?, {0x9fa1d8?, 0xc0002460e0?}, 0x8ade40?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.routes.Handler.func5({0x9fa1d8, 0xc0002460e0}, 0xc000236090?, {0xc0002421c0?, 0x500416?, 0x0?})
+	/u13/www/html/go/src/hcondo/app/route/middleware/httprouterwrapper/httprouterwrapper.go:27 +0x87
+github.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0001306c0, {0x9fa1d8, 0xc0002460e0}, 0xc00025a000)
+	/u13/www/html/go/pkg/mod/github.com/julienschmidt/httprouter@v1.3.0/router.go:387 +0x7eb
+github.com/josephspurrier/csrfbanana.(*CSRFHandler).ServeHTTP(0xc00014f490, {0x9fa1d8, 0xc0002460e0}, 0xc00025a000)
+	/u13/www/html/go/pkg/mod/github.com/josephspurrier/csrfbanana@v0.0.0-20240120013320-96e1b405041b/csrfbanana.go:117 +0x20f
+hcondo/app/route.middleware.Handler.func2({0x9fa1d8, 0xc0002460e0}, 0xc00025a000)
+	/u13/www/html/go/src/hcondo/app/route/middleware/logrequest/logrequest.go:16 +0x202
+net/http.HandlerFunc.ServeHTTP(0x10?, {0x9fa1d8?, 0xc0002460e0?}, 0x447a2b?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+hcondo/app/route.middleware.ClearHandler.func3({0x9fa1d8?, 0xc0002460e0?}, 0xc000266000?)
+	/u13/www/html/go/pkg/mod/github.com/gorilla/context@v1.1.2/context.go:137 +0x64
+net/http.HandlerFunc.ServeHTTP(0xd1d960?, {0x9fa1d8?, 0xc0002460e0?}, 0xc000157b50?)
+	/opt/go/src/net/http/server.go:2136 +0x29
+net/http.serverHandler.ServeHTTP({0xc000216690?}, {0x9fa1d8?, 0xc0002460e0?}, 0x6?)
+	/opt/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000256000, {0x9fae58, 0xc0001b3350})
+	/opt/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/opt/go/src/net/http/server.go:3086 +0x5cb
+INFO 2024/05/18 11:35:09 logrequest.go:14: 172.21.0.84:36386 GET /jlogin/ludmi/bHVkbWkxNQ==
+INFO 2024/05/18 11:37:14 logrequest.go:14: 172.21.0.84:53110 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/20 10:42:25 main.go:35: Mensaje de Inicio
+INFO 2024/05/20 10:42:25 main.go:43: Starting app
+INFO 2024/05/20 10:42:25 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/20 10:42:25 route.go:393: middleware hcondo
+INFO 2024/05/20 10:42:25 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/20 10:42:25 route.go:393: middleware hcondo
+INFO 2024/05/20 10:42:25 server.go:38: 0.0.0.0:4430
+INFO 2024/05/20 10:53:40 logrequest.go:14: 172.21.0.84:52128 GET /jlogin/ludmi/bHVkbWkxNQ==
+2024/05/22 08:02:37 main.go:35: Mensaje de Inicio
+INFO 2024/05/22 08:02:37 main.go:43: Starting app
+INFO 2024/05/22 08:02:37 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/22 08:02:37 route.go:393: middleware hcondo
+INFO 2024/05/22 08:02:37 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/22 08:02:37 route.go:393: middleware hcondo
+INFO 2024/05/22 08:02:37 server.go:38: 0.0.0.0:4430
+2024/05/24 16:12:48 main.go:35: Mensaje de Inicio
+INFO 2024/05/24 16:12:48 main.go:43: Starting app
+INFO 2024/05/24 16:12:48 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/24 16:12:48 route.go:393: middleware hcondo
+INFO 2024/05/24 16:12:48 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/24 16:12:48 route.go:393: middleware hcondo
+INFO 2024/05/24 16:12:48 server.go:38: 0.0.0.0:4430
+2024/05/24 16:13:43 server.go:3214: http: TLS handshake error from [::1]:60616: remote error: tls: unknown certificate
+2024/05/24 16:13:43 server.go:3214: http: TLS handshake error from [::1]:60632: remote error: tls: unknown certificate
+2024/05/24 16:14:00 server.go:3214: http: TLS handshake error from [::1]:41566: remote error: tls: unknown certificate
+2024/05/24 16:14:00 server.go:3214: http: TLS handshake error from [::1]:41568: remote error: tls: unknown certificate
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/css/bootstrap.css?1580161104
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/css/global.css?1692146814
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/favicons/jpeg/imp_2_izq.jpg
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/favicons/jpeg/imp_2_cent.jpg
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/favicons/jpeg/imp_2_der.jpg
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/js/jquery.min.js?1580161104
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/js/underscore-min.js?1580161104
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/favicons/jpeg/imp_2_caset.jpg
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/js/popper.min.js?1580161104
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/js/global.js?1580161104
+INFO 2024/05/24 16:14:00 logrequest.go:14: [::1]:41580 GET /static/favicons/favicon-32x32.png
+2024/05/25 09:34:25 main.go:35: Mensaje de Inicio
+INFO 2024/05/25 09:34:25 main.go:43: Starting app
+INFO 2024/05/25 09:34:25 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/25 09:34:25 route.go:393: middleware hcondo
+INFO 2024/05/25 09:34:25 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/25 09:34:25 route.go:393: middleware hcondo
+INFO 2024/05/25 09:34:25 server.go:40: 0.0.0.0:4430
+2024/05/25 09:34:25 server.go:88: listen tcp :443: bind: permission denied
+2024/05/25 09:47:02 main.go:35: Mensaje de Inicio
+INFO 2024/05/25 09:47:02 main.go:43: Starting app
+INFO 2024/05/25 09:47:02 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/25 09:47:02 route.go:393: middleware hcondo
+INFO 2024/05/25 09:47:02 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/25 09:47:02 route.go:393: middleware hcondo
+INFO 2024/05/25 09:47:02 server.go:40: 0.0.0.0:4430
+2024/05/25 09:47:02 server.go:88: listen tcp :443: bind: address already in use
+2024/05/25 09:48:28 main.go:35: Mensaje de Inicio
+INFO 2024/05/25 09:48:28 main.go:43: Starting app
+INFO 2024/05/25 09:48:28 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/25 09:48:28 route.go:393: middleware hcondo
+INFO 2024/05/25 09:48:28 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/25 09:48:28 route.go:393: middleware hcondo
+INFO 2024/05/25 09:48:28 server.go:40: 0.0.0.0:4430
+2024/05/25 09:48:28 server.go:88: listen tcp :443: bind: address already in use
+2024/05/25 09:50:01 main.go:35: Mensaje de Inicio
+INFO 2024/05/25 09:50:01 main.go:43: Starting app
+INFO 2024/05/25 09:50:01 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/25 09:50:01 route.go:393: middleware hcondo
+INFO 2024/05/25 09:50:01 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/25 09:50:01 route.go:393: middleware hcondo
+INFO 2024/05/25 09:50:01 server.go:40: 0.0.0.0:4431
+2024/05/25 09:50:01 server.go:88: listen tcp :443: bind: address already in use
+2024/05/25 10:00:39 main.go:35: Mensaje de Inicio
+INFO 2024/05/25 10:00:39 main.go:43: Starting app
+INFO 2024/05/25 10:00:39 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/25 10:00:39 route.go:393: middleware hcondo
+INFO 2024/05/25 10:00:39 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/25 10:00:39 route.go:393: middleware hcondo
+INFO 2024/05/25 10:00:39 server.go:40: 0.0.0.0:4431
+2024/05/25 10:00:39 server.go:88: listen tcp :443: bind: permission denied
+2024/05/29 09:37:09 main.go:35: Mensaje de Inicio
+INFO 2024/05/29 09:37:09 main.go:43: Starting app
+INFO 2024/05/29 09:37:09 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/29 09:37:09 route.go:397: middleware hcondo
+INFO 2024/05/29 09:37:09 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/29 09:37:09 route.go:397: middleware hcondo
+INFO 2024/05/29 09:37:09 server.go:40: 0.0.0.0:4430
+2024/05/29 09:37:09 server.go:88: listen tcp :443: bind: permission denied
+2024/05/29 09:42:56 main.go:35: Mensaje de Inicio
+INFO 2024/05/29 09:42:56 main.go:43: Starting app
+INFO 2024/05/29 09:42:56 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/29 09:42:56 route.go:397: middleware hcondo
+INFO 2024/05/29 09:42:56 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/29 09:42:56 route.go:397: middleware hcondo
+INFO 2024/05/29 09:42:56 server.go:40: 0.0.0.0:4430
+2024/05/29 09:42:56 server.go:88: listen tcp :443: bind: permission denied
+2024/05/29 13:44:09 main.go:35: Mensaje de Inicio
+INFO 2024/05/29 13:44:09 main.go:43: Starting app
+INFO 2024/05/29 13:44:09 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/05/29 13:44:09 route.go:397: middleware hcondo
+INFO 2024/05/29 13:44:09 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/05/29 13:44:09 route.go:397: middleware hcondo
+INFO 2024/05/29 13:44:09 server.go:57: 0.0.0.0:4430
+2024/06/03 14:43:01 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 14:43:01 main.go:43: Starting app
+2024/06/03 14:43:01 jsonconfig.go:38: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 14:43:18 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 14:43:18 main.go:43: Starting app
+2024/06/03 14:43:18 jsonconfig.go:38: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 15:08:32 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 15:08:32 main.go:43: Starting app
+2024/06/03 15:08:32 jsonconfig.go:39: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 15:08:47 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 15:08:47 main.go:43: Starting app
+2024/06/03 15:08:47 jsonconfig.go:39: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 15:09:07 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 15:09:07 main.go:43: Starting app
+2024/06/03 15:09:07 jsonconfig.go:39: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 15:12:54 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 15:12:54 main.go:43: Starting app
+2024/06/03 15:12:54 jsonconfig.go:39: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 15:14:11 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 15:14:11 main.go:43: Starting app
+2024/06/03 15:14:11 jsonconfig.go:39: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 15:14:23 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 15:14:23 main.go:43: Starting app
+2024/06/03 15:14:23 jsonconfig.go:37: Could not parse %q: %v config/config.json invalid character 'e' in literal true (expecting 'u')
+2024/06/03 15:15:38 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 15:15:38 main.go:43: Starting app
+INFO 2024/06/03 15:15:38 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/06/03 15:15:38 route.go:397: middleware hcondo
+INFO 2024/06/03 15:15:38 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/06/03 15:15:38 route.go:397: middleware hcondo
+INFO 2024/06/03 15:15:38 server.go:62: :8080
+2024/06/03 15:15:38 server.go:95: listen tcp :8080: bind: address already in use
+2024/06/03 16:59:36 main.go:35: Mensaje de Inicio
+INFO 2024/06/03 16:59:36 main.go:43: Starting app
+INFO 2024/06/03 16:59:36 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/06/03 16:59:36 route.go:397: middleware hcondo
+INFO 2024/06/03 16:59:36 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/06/03 16:59:36 route.go:397: middleware hcondo
+INFO 2024/06/03 16:59:36 server.go:62: :8080
+2024/06/03 16:59:36 server.go:95: listen tcp :8080: bind: address already in use
+2024/06/14 11:46:39 main.go:35: Mensaje de Inicio
+INFO 2024/06/14 11:46:39 main.go:43: Starting app
+INFO 2024/06/14 11:46:39 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/06/14 11:46:39 route.go:397: middleware hcondo
+INFO 2024/06/14 11:46:39 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/06/14 11:46:39 route.go:397: middleware hcondo
+INFO 2024/06/14 11:46:39 server.go:60: :123
+2024/06/14 11:46:39 server.go:82: listen tcp :123: bind: permission denied
+2024/06/14 11:46:50 main.go:35: Mensaje de Inicio
+INFO 2024/06/14 11:46:50 main.go:43: Starting app
+INFO 2024/06/14 11:46:50 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/06/14 11:46:50 route.go:397: middleware hcondo
+INFO 2024/06/14 11:46:50 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/06/14 11:46:50 route.go:397: middleware hcondo
+INFO 2024/06/14 11:46:50 server.go:60: :1234
+2024/06/14 11:46:50 server.go:92: listen tcp :1234: bind: address already in use

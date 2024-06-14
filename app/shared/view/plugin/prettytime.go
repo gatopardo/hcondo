@@ -5,7 +5,8 @@ import (
 	"time"
         "fmt"
         "strings"
-	"github.com/gatopardo/hcondo/app/controller"
+//	"github.com/gatopardo/hcondo/app/controller"
+	"hcondo/app/controller"
 
 )
 

@@ -9,56 +9,18 @@ import (
         "time"
         "encoding/json"
 
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
-	"github.com/gatopardo/hcondo/app/shared/email"
-	"github.com/gorilla/sessions"
+//	"github.com/gatopardo/hcondo/app/model"
+	"hcondo/app/model"
+//	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/shared/view"
+//	"github.com/gatopardo/hcondo/app/shared/email"
+	"hcondo/app/shared/email"
 
+	"github.com/gorilla/sessions"
         "github.com/gorilla/context"
 	"github.com/josephspurrier/csrfbanana"
        "github.com/julienschmidt/httprouter"
   )
-
-  type  STotals struct{
-       SCuot    int64
-       SIng     int64
-       SEgre    int64
-       SAtra    int64
-       SAmount  int64
-  }
-
-   type  ArPay struct {
-	Apto    string
-	Final   time.Time
-	APaym   []model.CuotApt
-   }
-
-   type TotPay struct {
-        Value   int64
-	Fname   string
-	Lname   string
-	Email   string
-	Codigo  string
-	Final   time.Time
-	APaym   []model.CuotApt
-   }
-
-type AptEstadJ struct {
-        Fecha       time.Time       `db:"fecha" bson:"fecha"`
-        Cuota             int64     `db:"cuota" bson:"cuota"`
-        Amount            int64     `db:"amount" bson:"amount"`
-        Balance           int64     `db:"balance" bson:"balance"`
-}
-
-type AptEstadL struct {
-	Apt         string
-	SCuota      int64
-	SAmount     int64
-        Period      time.Time
-	LisEstad     []AptEstadJ
-}
-
-
 // ---------------------------------------------------
 // MailSendGet despliega formulario para enviar correo
 func MailSendGET(w http.ResponseWriter, r *http.Request) {
@@ -459,7 +421,9 @@ func RptAllCondPOST(w http.ResponseWriter, r *http.Request) {
  }
 // ---------------------------------------------------
 // ---------------------------------------------------
-  func procesaApt(lsAptTots []model.AmtAptTot)(pos int, scuot, smonto int64){
+// repetido en aparta.go
+/*
+ func procesaApt(lsAptTots []model.AmtAptTot)(pos int, scuot, smonto int64){
          var  sdif int64
 	 scuot  = int64(0)
 	 smonto = int64(0)
@@ -491,7 +455,7 @@ func RptAllCondPOST(w http.ResponseWriter, r *http.Request) {
 	 }
         return
   }
-
+*/
 // ---------------------------------------------------
 // getAptEstad get apt State up to a period
   func getAptEstad(apt string,  dFini time.Time)(aptEstadL AptEstadL, err error){

@@ -1,20 +1,63 @@
 package controller
 
 import (
-//	"log"
+	"log"
 	"net/http"
         "fmt"
         "strings"
         "time"
         "strconv"
+	"encoding/json"
 
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/model"
+	"hcondo/app/shared/view"
 
         "github.com/gorilla/context"
 	"github.com/josephspurrier/csrfbanana"
 	"github.com/julienschmidt/httprouter"
   )
+
+//------------------------------------------------
+// JEgreGET despliega json service de egresos
+ func JEgreGET(w http.ResponseWriter, r *http.Request) {
+	var periodo model.Periodo
+        var lisEgre  []model.EgresoJ
+	var  egresoL  model.EgresoL
+        var js []byte
+        var params httprouter.Params
+	sess := model.Instance(r)
+        params      = context.Get(r, "params").(httprouter.Params)
+	sfec       :=  params.ByName("fec1")[:7]+"-01"
+	dtfec,err  :=  time.Parse(layout, sfec)
+        if err != nil {
+	        log.Println(err)
+	}else{
+        dtfec       =  time.Date(dtfec.Year(), dtfec.Month(),dtfec.Day(), 0, 0, 0, 0, time.Local)
+        err         = (&periodo).PeriodByFec(dtfec)
+        if err     != nil {
+	        log.Println(err)
+        }else{
+          lisEgre, err           = model.EgresoJPer( periodo.Id )
+          if err != nil {
+           sess.AddFlash(view.Flash{"No egreso periodo ", view.FlashError})
+            log.Println(err)
+          }else{
+            egresoL.Period  =  periodo.Inicio
+            egresoL.LisEgre =  lisEgre
+// fmt.Println(lisEgre)
+            js, err =  json.Marshal(egresoL)
+            if err == nil{
+               w.Header().Set("Content-Type", "application/json")
+               w.Write(js)
+	       return
+            }
+           }
+          }
+          }
+          log.Println("JEgre  ", err)
+          http.Error(w, err.Error(), http.StatusInternalServerError)
+          return
+ }
 
 //------------------------------------------------
 // EgrePerGET despliega formulario escoger periodo

@@ -8,7 +8,10 @@ import (
         "os"
         "strconv"
 
-        "github.com/gatopardo/hcondo/app/route"
+        "crypto/tls"
+        "golang.org/x/crypto/acme/autocert"
+
+        "hcondo/app/route"
 )
 
 // Server stores the hostname and port number
@@ -27,7 +30,27 @@ type Server struct {
 // Run starts the HTTP and/or HTTPS listener
 func Run(httpHandlers http.Handler, httpsHandlers http.Handler, s Server) {
 	 fmt.Println("Server al inicio ", s.Origin )
+
+	 certManager := autocert.Manager{
+              Prompt:     autocert.AcceptTOS,
+              HostPolicy: autocert.HostWhitelist("gato.ddns.net", "localhost"),
+              Cache:      autocert.DirCache("certs"),  //"secret-dir"
+          }        
+
+	  server := &http.Server{
+              Addr: ":https",
+              TLSConfig: &tls.Config{
+                  GetCertificate: certManager.GetCertificate,
+              },
+          }
+	  
+  /*       s.Addr = ":https"
+	 s.TLSConfig = &tls.Config{
+                  GetCertificate: certManager.GetCertificate,
+	 }
+*/
         if  s.Remote   {
+
               sport := os.Getenv("PORT")
               iport, _ :=  strconv.Atoi(sport)
               s.HTTPPort = iport
@@ -37,14 +60,15 @@ func Run(httpHandlers http.Handler, httpsHandlers http.Handler, s Server) {
         route.Flogger.Println(httpsAddress(s))
 	if s.UseHTTP && s.UseHTTPS {
 		go func() {
-			startHTTPS(httpsHandlers, s)
+			startHTTPS(httpsHandlers, s )
 		}()
-
 		startHTTP(httpHandlers, s)
 	} else if s.UseHTTP {
 		startHTTP(httpHandlers, s)
 	} else if s.UseHTTPS {
-		startHTTPS(httpsHandlers, s)
+		log.Fatal(server.ListenAndServeTLS("",""))
+//             log.Fatal(http.ListenAndServe(":http", certManager.HTTPHandler(nil)))
+//		startHTTPS(httpsHandlers, s)
 	} else {
 		log.Println("Fichero Config no specifica servidor para iniciar")
 	}
@@ -60,13 +84,18 @@ func startHTTP(handlers http.Handler, s Server) {
 
 // startHTTPs starts the HTTPS listener
 func startHTTPS(handlers http.Handler, s Server) {
+ //	
 	fmt.Println(time.Now().Format("2006-01-02 03:04:05 PM"), "Running HTTPS "+httpsAddress(s))
 
 	// Start the HTTPS listener
 	if s.Remote {
              log.Fatal(http.ListenAndServe(httpsAddress(s), handlers))
         } else {
-             log.Fatal(http.ListenAndServeTLS(httpsAddress(s), s.CertFile, s.KeyFile, handlers))
+
+//             log.Fatal(http.ListenAndServeTLS("", ""))
+
+//             log.Fatal(http.ListenAndServeTLS(httpsAddress(s), s.CertFile, s.KeyFile, handlers))
+             log.Fatal(http.ListenAndServeTLS(httpsAddress(s), "","", handlers))
         }
 }
 

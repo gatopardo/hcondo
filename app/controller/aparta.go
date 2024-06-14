@@ -1,14 +1,15 @@
 package controller
 
 import (
-//	"log"
+        "log"
 	"net/http"
         "strings"
         "fmt"
         "time"
+        "encoding/json"
 
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/model"
+	"hcondo/app/shared/view"
 
         "github.com/gorilla/context"
 	"github.com/josephspurrier/csrfbanana"
@@ -16,6 +17,140 @@ import (
   )
 //      Refill any form fields
 // view.Repopulate([]string{"name"}, r.Form, v.Vars)
+
+// ---------------------------------------------------
+  func procesaApt(lsAptTots []model.AmtAptTot)(pos int, scuot, smonto int64){
+         var  sdif int64
+	 scuot  = int64(0)
+	 smonto = int64(0)
+	 sdif   =  int64(0)
+	 sfec  := time.Date(1,1,1,0,0,0,0,time.UTC)
+         pos = 0
+	 j := 0
+	 k := 0
+         for i, amt := range lsAptTots {
+             k = i
+	     smonto = smonto +  amt.Monto
+	     if sfec != amt.Inicio {
+	          scuot = scuot + amt.Cuota
+	     }
+	     sdif =  scuot - smonto
+	     if sdif <= int64(0){
+		     j = pos
+		     pos = i
+	     }
+	     lsAptTots[i].Dif = sdif
+	     sfec = amt.Inicio
+	 }
+         if  (k - pos) <  5{
+             pos = j
+	     if  (j  - pos) < 5 && (k - 10) > 0{
+                pos = k - 10
+	     }
+	 }
+        return
+ }
+// ---------------------------------------------------
+// japtget json service for apt state
+func JAptGET(w http.ResponseWriter, r *http.Request) {
+	var peridf  model.Periodo
+        var params httprouter.Params
+        var jpers  model.Jperson
+	var aparta model.Aparta
+	var aptEstadL AptEstadL
+	var aptEstad []AptEstadJ
+        var aptDet AptEstadJ
+	
+	//        var lisPaym []model.CuotApt
+//	var arPaym ArPay
+//	var dt11, dt22  time.Time
+	var dt22  time.Time
+	var err  error
+	sess := model.Instance(r)
+        params           = context.Get(r, "params").(httprouter.Params)
+//	sfec1           :=  params.ByName("fec1")[:7]+"-01"
+        sfec1           := "0001-01-01"
+	sfec2           :=  params.ByName("fec1")[:7]+"-01"
+	dIni,_          := time.Parse( layout, sfec1)
+//	dFini,_         := time.Parse(layout, sfec2)
+        sId             :=  params.ByName("id")
+        uid,_           :=  atoi32(sId)
+ fmt.Printf("JAptGET 0 %s %s\n", sfec1, sfec2)
+//	dt11,err         =  time.Parse(layout, sfec1)
+//        if err == nil {
+	    dt22,err   =  time.Parse(layout, sfec2)
+//            err        =  (&peridi).PeriodByFec(dt11)
+//	    if err    ==  nil {
+               err     =  (&peridf).PeriodByFec(dt22)
+//            }
+//        }
+        if err      != nil {
+	        log.Println(err)
+		http.Error(w, err.Error(), http.StatusBadRequest)
+	        return
+        }	
+	_, err         =   (&jpers).JPersByUserId(uid)
+	if err == model.ErrNoResult {
+           log.Println("JAPTGET ", err)
+	        http.Error(w, err.Error(), http.StatusBadRequest)
+	   return
+        }
+	aparta.Id  = jpers.AptId
+        err = (&aparta).AptById()
+        if err      != nil {
+	        log.Println(err)
+		http.Error(w, err.Error(), http.StatusBadRequest)
+	        return
+        }
+
+        fmt.Printf("JAptGET 1 %s %s\n", peridf.Final.Format(layout), dIni.Format(layout))
+/*        lisPaym, err   =  model.Payments(jpers.AptId, peridf.Inicio, peridi.Inicio)
+        if err == nil {
+           arPaym.Apto   = jpers.Apto
+	   arPaym.Final  = peridf.Final
+	   arPaym.APaym  = lisPaym
+*/
+        amtTots, err := model.AptDetails(aparta.Codigo, dIni , peridf.Final )
+
+// fmt.Printf( "JAptGET 2 %d %s %s %s\n", len(amtTots), aparta.Codigo,dIni.Format(layout), peridf.Final.Format(layout))
+ // fmt.Println( amtTots)
+  	if err != nil {
+		log.Println(err)
+		return
+	}
+
+        p,scuot,smonto := procesaApt(amtTots)
+	aptEstadL.Apt     =  aparta.Codigo
+	aptEstadL.Period  =  peridf.Final
+	aptEstadL.SCuota  =  scuot
+	aptEstadL.SAmount =  smonto
+	lon :=  len(amtTots)
+	for i  := lon - 1; i >= p; i-- {
+		aptDet = AptEstadJ{ Fecha:   amtTots[i].Fecha,
+                                    Cuota:   amtTots[i].Cuota,
+                                    Amount:  amtTots[i].Monto,
+                                    Balance: amtTots[i].Dif,
+	                          }
+	   aptEstad  = append(aptEstad, aptDet)
+         }
+	 aptEstadL.LisEstad = aptEstad
+// fmt.Printf( "JAptGET 3 %d %s %s %d %d\n", len(aptEstad), aparta.Codigo,peridf.Final.Format(layout), smonto/100, scuot/100)
+ fmt.Println( "JAptGET 4 \n", aptEstad[:5] )
+
+           var js []byte
+           js, err =  json.Marshal(aptEstadL)
+// fmt.Println( "JAptGET 5 \n", js )
+           if err == nil{
+               w.Header().Set("Content-Type", "application/json")
+               w.Write(js)
+	       return
+           }
+//	}
+           log.Println("JAPTGET 2 ", err)
+          sess.Save(r, w)
+            http.Error(w, err.Error(), http.StatusInternalServerError)
+	return
+ }
 // ---------------------------------------------------
 // AptGET despliega la pagina del apto
 func AptGET(w http.ResponseWriter, r *http.Request) {

@@ -3,7 +3,8 @@ package controller
 import (
 	"net/http"
 
-	"github.com/gatopardo/hcondo/app/shared/view"
+//	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/shared/view"
 )
 
 // AboutGET displays the About page

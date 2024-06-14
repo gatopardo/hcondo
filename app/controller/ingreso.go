@@ -7,9 +7,10 @@ import (
         "strings"
         "time"
         "strconv"
+       "encoding/json"
 
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/model"
+	"hcondo/app/shared/view"
 
         "github.com/gorilla/context"
 	"github.com/josephspurrier/csrfbanana"
@@ -20,6 +21,60 @@ import (
       formato2        =  "2006-01-02"
   )
 //------------------------------------------------
+//------------------------------------------------
+ func JIngreGET(w http.ResponseWriter, r *http.Request) {
+	var peridi  model.Periodo
+	var peridf  model.Periodo
+	var lisIngre  []model.IngresoJ
+	var  ingresoL  model.IngresoL
+        var js []byte
+        var params httprouter.Params
+//	sess := model.Instance(r)
+        params      = context.Get(r, "params").(httprouter.Params)
+	sfec1       :=  params.ByName("fec1")[:7] + "-01"
+	sfec2       :=  params.ByName("fec2")[:7] + "-01"
+// fmt.Printf(" JIngreGET 0 %s %s\n", sfec1, sfec2)	
+	dtfec1,err1  :=  time.Parse(layout, sfec1)
+        if (err1 != nil  )  { log.Println("JIngretGET",err1) }
+	dtfec2,err2  :=  time.Parse(layout, sfec2)
+        if (err2 != nil  )  { log.Println("JIngretGET",err2) }
+	if (err1 == nil) && (err2 == nil){
+        dtfec1       =  time.Date(dtfec1.Year(), dtfec1.Month(),dtfec1.Day(), 0, 0, 0, 0, time.Local)
+        err1         = (&peridi).PeriodByFec(dtfec1)
+        if (err1 != nil  )  { log.Println("JIngretGET",err1) }
+        dtfec2       =  time.Date(dtfec2.Year(), dtfec2.Month(),dtfec2.Day(), 0, 0, 0, 0, time.Local)
+        err2         = (&peridf).PeriodByFec(dtfec2)
+        if (err2 != nil  )  { log.Println("JIngretGET",err2) }
+	if (err1 == nil) && (err2 == nil){
+          lisIngre, err1  = model.IngresoJPer( peridi.Inicio, peridf.Final )
+	  var  num int64 = 0
+// fmt.Printf(" JIngreGET 1 %d \n", len(lisIngre))	
+          if err1 != nil { log.Println(err1) 
+          }else {
+            if len(lisIngre) == 0 {
+	        var dfec time.Time
+                dfec,_ = time.Parse(formato , "1900/01/01")
+		ingresoj := model.IngresoJ{Tipo: "X"  , Fecha: dfec, Amount: num, Descripcion: ""}
+                lisIngre =  append( lisIngre, ingresoj)
+            }
+            ingresoL.Period  =  peridi.Inicio
+            ingresoL.LisIngre =  lisIngre
+            js, err1 =  json.Marshal(ingresoL)
+            if err1 == nil{
+               w.Header().Set("Content-Type", "application/json")
+               w.Write(js)
+	       return
+            }
+           }
+          }
+          }
+          log.Println("JIngreGET  ", err1)
+          http.Error(w, err1.Error(), http.StatusInternalServerError)
+          return
+ }
+
+
+
 // ---------------------------------------------------
 // IngrePerGET despliega formulario escoger periodo
 func IngrePerGET(w http.ResponseWriter, r *http.Request) {

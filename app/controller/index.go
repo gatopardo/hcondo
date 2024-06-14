@@ -3,8 +3,10 @@ package controller
 import (
 	"net/http"
 
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
+//	"github.com/gatopardo/hcondo/app/model"
+	"hcondo/app/model"
+//	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/shared/view"
 )
 
 // IndexGET displays the home page

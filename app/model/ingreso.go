@@ -150,10 +150,10 @@ func IngresDeleteAll() (err error) {
  }
 // -------------------------------------------------------------
 // Get ingresos from a period - json 
-  func IngresoJPer( feci time.Time ) (ingresos []IngresoJ, err error) {
+  func IngresoJPer( feci time.Time, fecf time.Time ) (ingresos []IngresoJ, err error) {
 	stLayout := "2006-01-02"
-        stq :=   "SELECT t.codigo, e.fecha, e.amount, e.description FROM ingresos e, periods p,  tipos t where e.period_id = p.id  and e.tipo_id = t.id and p.inicio =  $1  order by p.inicio, e.fecha "
-	rows, err := Db.Query(stq, feci)
+        stq :=   "SELECT t.codigo, e.fecha, e.amount, e.description FROM ingresos e, periods p,  tipos t where e.period_id = p.id  and e.tipo_id = t.id and p.inicio >=  $1 and p.final <= $2 order by p.inicio, e.fecha "
+	rows, err := Db.Query(stq, feci, fecf)
 	if err != nil {
             return
 	}

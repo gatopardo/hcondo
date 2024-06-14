@@ -7,8 +7,10 @@ import (
         "fmt"
         "time"
 
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
+//	"github.com/gatopardo/hcondo/app/model"
+	"hcondo/app/model"
+//	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/shared/view"
 
         "github.com/gorilla/context"
 	"github.com/josephspurrier/csrfbanana"

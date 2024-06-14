@@ -3,7 +3,8 @@ package acl
 
 import (
 	"net/http"
-	"github.com/gatopardo/hcondo/app/model"
+//	"github.com/gatopardo/hcondo/app/model"
+	"hcondo/app/model"
 //	"fmt"
 )
 

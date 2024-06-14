@@ -2,14 +2,58 @@ package controller
 
 import (
         "fmt"
+        "time"
         "strings"
 	"log"
         "strconv"
+
+	"hcondo/app/model"
+        "hcondo/app/shared/view"
+
 	"github.com/gorilla/sessions"
-        "github.com/gatopardo/hcondo/app/shared/view"
 
 //	   "github.com/jung-kurt/gofpdf"
   )
+
+
+  type  STotals struct{
+       SCuot    int64
+       SIng     int64
+       SEgre    int64
+       SAtra    int64
+       SAmount  int64
+  }
+
+   type  ArPay struct {
+	Apto    string
+	Final   time.Time
+	APaym   []model.CuotApt
+   }
+
+   type TotPay struct {
+        Value   int64
+	Fname   string
+	Lname   string
+	Email   string
+	Codigo  string
+	Final   time.Time
+	APaym   []model.CuotApt
+   }
+
+type AptEstadJ struct {
+        Fecha       time.Time       `db:"fecha" bson:"fecha"`
+        Cuota             int64     `db:"cuota" bson:"cuota"`
+        Amount            int64     `db:"amount" bson:"amount"`
+        Balance           int64     `db:"balance" bson:"balance"`
+}
+
+type AptEstadL struct {
+	Apt         string
+	SCuota      int64
+	SAmount     int64
+        Period      time.Time
+	LisEstad     []AptEstadJ
+}
 
       const(
               limit       = 15

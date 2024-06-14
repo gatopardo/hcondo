@@ -1,20 +1,64 @@
 package controller
 
 import (
-//	"log"
+	"log"
 	"net/http"
         "fmt"
         "strings"
         "strconv"
         "time"
+        "encoding/json"
 
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
+	"hcondo/app/model"
+	"hcondo/app/shared/view"
 
         "github.com/gorilla/context"
 	"github.com/josephspurrier/csrfbanana"
 	"github.com/julienschmidt/httprouter"
   )
+   // -------------------------------------------------:--
+  // JCondoGET reporte estado condominio
+ func JCondoGET(w http.ResponseWriter, r *http.Request) {
+	var perid model.Periodo
+        var lisAmt     []model.AmtCond
+        var amtPerCond   model.AmtPerCond
+        var params httprouter.Params
+	sess := model.Instance(r)
+        params      = context.Get(r, "params").(httprouter.Params)
+	sfec       :=  params.ByName("fec1")[:7]+"-01"
+	dtfec,err  :=  time.Parse(layout, sfec)
+        if err != nil {
+              sess.AddFlash(view.Flash{"Formato Fecha Errado ", view.FlashError})
+	      log.Println(err)
+	}else{
+        dtfec       =  time.Date(dtfec.Year(), dtfec.Month(),dtfec.Day(), 0, 0, 0, 0, time.Local)
+        err         = (&perid).PeriodByFec(dtfec)
+        if err     != nil {
+	        log.Println(err)
+        }else{
+	  lisAmt, err           = model.Amounts( perid.Id )
+          if err != nil {
+            log.Println(err)
+            log.Println(err)
+          }else{
+	    amtPerCond.Fecha = perid.Inicio
+	    amtPerCond.LisAmt = lisAmt
+// fmt.Println(lisAmt)
+            var js []byte
+            js, err =  json.Marshal(amtPerCond)
+            if err == nil{
+               w.Header().Set("Content-Type", "application/json")
+               w.Write(js)
+	       return
+            }
+           }
+          }
+          }
+          log.Println("JCondo  ", err)
+          http.Error(w, err.Error(), http.StatusInternalServerError)
+          return
+ }
+
   // -------------------------------------------------:--
 // CuotPerGET despliega formulario escoger periodo
 func CuotPerGET(w http.ResponseWriter, r *http.Request) {

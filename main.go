@@ -7,14 +7,14 @@ import (
 	"runtime"
 //        "fmt"
 
-	"github.com/gatopardo/hcondo/app/route"
-	"github.com/gatopardo/hcondo/app/shared/email"
-	"github.com/gatopardo/hcondo/app/shared/jsonconfig"
-	"github.com/gatopardo/hcondo/app/shared/recaptcha"
-	"github.com/gatopardo/hcondo/app/shared/server"
-	"github.com/gatopardo/hcondo/app/model"
-	"github.com/gatopardo/hcondo/app/shared/view"
-	"github.com/gatopardo/hcondo/app/shared/view/plugin"
+	"hcondo/app/route"
+	"hcondo/app/shared/email"
+	"hcondo/app/shared/jsonconfig"
+	"hcondo/app/shared/recaptcha"
+	"hcondo/app/shared/server"
+	"hcondo/app/model"
+	"hcondo/app/shared/view"
+	"hcondo/app/shared/view/plugin"
 )
 
 var  file  * os.File
