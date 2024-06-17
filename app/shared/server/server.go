@@ -8,8 +8,8 @@ import (
         "os"
         "strconv"
 
-        "crypto/tls"
-        "golang.org/x/crypto/acme/autocert"
+//        "crypto/tls"
+//        "golang.org/x/crypto/acme/autocert"
 
         "hcondo/app/route"
 )
@@ -31,7 +31,7 @@ type Server struct {
 func Run(httpHandlers http.Handler, httpsHandlers http.Handler, s Server) {
 	 fmt.Println("Server al inicio ", s.Origin )
 
-	 certManager := autocert.Manager{
+/*	 certManager := autocert.Manager{
               Prompt:     autocert.AcceptTOS,
               HostPolicy: autocert.HostWhitelist("gato.ddns.net", "localhost"),
               Cache:      autocert.DirCache("certs"),  //"secret-dir"
@@ -43,7 +43,7 @@ func Run(httpHandlers http.Handler, httpsHandlers http.Handler, s Server) {
                   GetCertificate: certManager.GetCertificate,
               },
           }
-	  
+*/	  
   /*       s.Addr = ":https"
 	 s.TLSConfig = &tls.Config{
                   GetCertificate: certManager.GetCertificate,
