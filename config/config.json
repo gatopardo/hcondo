@@ -1,6 +1,6 @@
    {
 	"Database": {
-                "Remote"     : true,
+                "Remote"     : false,
                 "Origin":    "localhost",
 		"Type"       : "PostgreSQL",
 		"PostgreSql" : {

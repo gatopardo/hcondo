@@ -1,33 +1,8 @@
-2024/06/17 11:03:38 main.go:35: Mensaje de Inicio
-INFO 2024/06/17 11:03:38 main.go:43: Starting app
-INFO 2024/06/17 11:03:38 route.go:36: HTTPS routes LoadHTTP
-INFO 2024/06/17 11:03:38 route.go:397: middleware hcondo
-INFO 2024/06/17 11:03:38 route.go:30: HTTPS routes LoadHTTPS
-INFO 2024/06/17 11:03:38 route.go:397: middleware hcondo
-INFO 2024/06/17 11:03:38 server.go:60: 0.0.0.0:4430
-2024/06/17 11:03:38 server.go:98: open : no such file or directory
-2024/06/17 11:28:02 main.go:35: Mensaje de Inicio
-INFO 2024/06/17 11:28:02 main.go:43: Starting app
-INFO 2024/06/17 11:28:02 route.go:36: HTTPS routes LoadHTTP
-INFO 2024/06/17 11:28:02 route.go:397: middleware hcondo
-INFO 2024/06/17 11:28:02 route.go:30: HTTPS routes LoadHTTPS
-INFO 2024/06/17 11:28:02 route.go:397: middleware hcondo
-INFO 2024/06/17 11:28:02 server.go:60: 0.0.0.0:4430
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58812 GET /
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58812 GET /static/css/bootstrap.css?1580161104
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58822 GET /static/css/global.css?1692146814
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58834 GET /static/favicons/jpeg/imp_2_izq.jpg
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58846 GET /static/favicons/jpeg/imp_2_cent.jpg
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58866 GET /static/favicons/jpeg/imp_2_caset.jpg
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58856 GET /static/favicons/jpeg/imp_2_der.jpg
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58822 GET /static/js/jquery.min.js?1580161104
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58812 GET /static/js/underscore-min.js?1580161104
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58846 GET /static/js/popper.min.js?1580161104
-INFO 2024/06/17 11:28:25 logrequest.go:14: [::1]:58856 GET /static/js/global.js?1580161104
-INFO 2024/06/17 11:28:26 logrequest.go:14: [::1]:58856 GET /static/favicons/favicon-32x32.png
-INFO 2024/06/17 11:28:29 logrequest.go:14: [::1]:58856 GET /login
-INFO 2024/06/17 11:28:36 logrequest.go:14: [::1]:58856 POST /login
-INFO 2024/06/17 11:28:36 logrequest.go:14: [::1]:58856 GET /
-INFO 2024/06/17 11:28:47 logrequest.go:14: [::1]:58856 GET /period/list
-INFO 2024/06/17 11:28:51 logrequest.go:14: [::1]:58856 GET /logout
-INFO 2024/06/17 11:28:51 logrequest.go:14: [::1]:58856 GET /
+2024/06/17 11:54:51 main.go:35: Mensaje de Inicio
+INFO 2024/06/17 11:54:51 main.go:43: Starting app
+INFO 2024/06/17 11:54:51 route.go:36: HTTPS routes LoadHTTP
+INFO 2024/06/17 11:54:51 route.go:397: middleware hcondo
+INFO 2024/06/17 11:54:51 route.go:30: HTTPS routes LoadHTTPS
+INFO 2024/06/17 11:54:51 route.go:397: middleware hcondo
+INFO 2024/06/17 11:54:51 server.go:60: :8080
+2024/06/17 11:54:51 server.go:69: listen tcp :443: bind: permission denied
