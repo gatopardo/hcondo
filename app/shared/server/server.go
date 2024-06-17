@@ -66,9 +66,9 @@ func Run(httpHandlers http.Handler, httpsHandlers http.Handler, s Server) {
 	} else if s.UseHTTP {
 		startHTTP(httpHandlers, s)
 	} else if s.UseHTTPS {
-		log.Fatal(server.ListenAndServeTLS("",""))
+//		log.Fatal(server.ListenAndServeTLS("",""))
 //             log.Fatal(http.ListenAndServe(":http", certManager.HTTPHandler(nil)))
-//		startHTTPS(httpsHandlers, s)
+		startHTTPS(httpsHandlers, s)
 	} else {
 		log.Println("Fichero Config no specifica servidor para iniciar")
 	}
